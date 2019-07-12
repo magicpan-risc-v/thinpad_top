@@ -84,34 +84,34 @@ module thinpad_top(
 /* =========== Demo code begin =========== */
 
 // PLL分频示例
-wire locked, clk_10M, clk_20M;
-pll_example clock_gen 
- (
-  // Clock out ports
-  .clk_out1(clk_10M), // 时钟输出1，频率在IP配置界面中设置
-  .clk_out2(clk_20M), // 时钟输出2，频率在IP配置界面中设置
-  // Status and control signals
-  .reset(reset_btn), // PLL复位输入
-  .locked(locked), // 锁定输出，"1"表示时钟稳定，可作为后级电路复位
- // Clock in ports
-  .clk_in1(clk_50M) // 外部时钟输入
- );
+//wire locked, clk_10M, clk_20M;
+//pll_example clock_gen 
+ //(
+  //// Clock out ports
+  //.clk_out1(clk_10M), // 时钟输出1，频率在IP配置界面中设置
+  //.clk_out2(clk_20M), // 时钟输出2，频率在IP配置界面中设置
+  //// Status and control signals
+  //.reset(reset_btn), // PLL复位输入
+  //.locked(locked), // 锁定输出，"1"表示时钟稳定，可作为后级电路复位
+ //// Clock in ports
+  //.clk_in1(clk_50M) // 外部时钟输入
+ //);
 
-reg reset_of_clk10M;
-// 异步复位，同步释放
-always@(posedge clk_10M or negedge locked) begin
-    if(~locked) reset_of_clk10M <= 1'b1;
-    else        reset_of_clk10M <= 1'b0;
-end
+//reg reset_of_clk10M;
+//// 异步复位，同步释放
+//always@(posedge clk_10M or negedge locked) begin
+    //if(~locked) reset_of_clk10M <= 1'b1;
+    //else        reset_of_clk10M <= 1'b0;
+//end
 
-always@(posedge clk_10M or posedge reset_of_clk10M) begin
-    if(reset_of_clk10M)begin
-        // Your Code
-    end
-    else begin
-        // Your Code
-    end
-end
+//always@(posedge clk_10M or posedge reset_of_clk10M) begin
+    //if(reset_of_clk10M)begin
+        //// Your Code
+    //end
+    //else begin
+        //// Your Code
+    //end
+//end
 
 // 数码管连接关系示意图，dpy1同理
 // p=dpy0[0] // ---a---
@@ -199,5 +199,42 @@ vga #(12, 800, 856, 976, 1040, 600, 637, 643, 666, 1, 1) vga800x600at75 (
     .data_enable(video_de)
 );
 /* =========== Demo code end =========== */
+
+// 在这里定义wire/reg/parameter
+//   关于串口控制器
+wire [31:0] ram_addr,	serial_addr;	// 访存/串口访问的地址
+wire [ 3:0] ram_mode,	serial_mode;	// 访存/串口访问的模式
+wire [31:0] ram_rdata,	serial_rdata;	// 访存/串口访问的读出数据
+wire [31:0]	ram_wdata,	serial_wdata;	// 访存/串口访问的写入数据
+wire		ram_ok,		serial_ok;		// 访存/串口访问的操作完成信号
+//   关于主存控制器
+wire [63:0] ram_w_data, ram_r_data,	ram_addr;
+wire [3:0]	ram_mode;
+wire		ram_ok;
+
+ram ram(
+	//与Chisel之间的接口
+	.clk(clk_50M),
+	.addr(ram_addr),			// 访存地址，低22位有效
+	.rdata(ram_r_data),		// 读出的数据
+	.wdata(ram_w_data),		// 写入的数据
+	.mode(ram_mode),			// 访存模式
+	.ok(ram_ok),					// 操作是否已经完成
+    //BaseRAM信号
+    .base_ram_data(base_ram_data),  //BaseRAM数据，低8位与CPLD串口控制器共享
+    .base_ram_addr(base_ram_addr), //BaseRAM地址
+    .base_ram_be_n(base_ram_be_n),  //BaseRAM字节使能，低有效。如果不使用字节使能，请保持为0
+    .base_ram_ce_n(base_ram_ce_n),       //BaseRAM片选，低有效
+    .base_ram_oe_n(base_ram_oe_n),       //BaseRAM读使能，低有效
+    .base_ram_we_n(base_ram_we_n),       //BaseRAM写使能，低有效
+
+    //ExtRAM信号
+    .ext_ram_data(ext_ram_data),  //ExtRAM数据
+    .ext_ram_addr(ext_ram_addr), //ExtRAM地址
+    .ext_ram_be_n(ext_ram_be_n),  //ExtRAM字节使能，低有效。如果不使用字节使能，请保持为0
+    .ext_ram_ce_n(ext_ram_ce_n),       //ExtRAM片选，低有效
+    .ext_ram_oe_n(ext_ram_oe_n),       //ExtRAM读使能，低有效
+    .ext_ram_we_n(ext_ram_we_n)       //ExtRAM写使能，低有效
+);
 
 endmodule
