@@ -108,4 +108,6 @@ assign ext_ram_data  = (access_ext && is_write)? lock_wdata[31:0]<<(8 * byte_sel
 wire [63:0] rdata_raw = {base_ram_data, ext_ram_data};
 assign rdata = (rdata_raw >> (32 * chip_selbase_n)) >> (8 * byte_sel);
 
+assign ok = is_read || is_write;
+
 endmodule
