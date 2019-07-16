@@ -7,11 +7,10 @@
 module ram (
 	input wire clk,					//时钟信号
 	
-	input wire [63:0] addr,			// 访存地址，低22位有效
+	input wire [63:0] addr,			// 访存地址，低23位有效
 	output wire [63:0] rdata,		// 读出的数据
 	input wire [63:0] wdata,		// 写入的数据
 	input wire [3:0] mode,			// 访存模式
-	output wire ok,					// 操作是否已经完成
 
     //BaseRAM信号
     inout wire[31:0] base_ram_data,  //BaseRAM数据，低8位与CPLD串口控制器共享
@@ -60,7 +59,7 @@ always @ (posedge clk) begin	// 当时钟信号上升沿到来
 end
 
 // Decide op type
-wire use_all_word = lock_mode == LD || lock_mode == SD;
+wire use_all_word = (lock_mode == LD || lock_mode == SD) && lock_mode != NOP;
 wire is_write = ~lock_mode[3];
 wire is_read  = lock_mode[3] && (lock_mode != NOP);
 
@@ -78,8 +77,8 @@ wire [3:0] be =
 	/*LW, LWU, SW, LD, SD, NOP */4'b0000;
 
 // 设置BaseRAM片选
-assign base_ram_ce_n = access_base;
-assign ext_ram_ce_n  = access_ext;
+assign base_ram_ce_n = ~access_base;
+assign ext_ram_ce_n  = ~access_ext;
 
 // 设置RAM访存地址
 assign base_ram_addr = word_sel;
@@ -108,6 +107,5 @@ assign ext_ram_data  = (access_ext && is_write)? lock_wdata[31:0]<<(8 * byte_sel
 wire [63:0] rdata_raw = {base_ram_data, ext_ram_data};
 assign rdata = (rdata_raw >> (32 * chip_selbase_n)) >> (8 * byte_sel);
 
-assign ok = is_read || is_write;
 
 endmodule
