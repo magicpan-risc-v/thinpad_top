@@ -1,0 +1,134 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Jul 29 03:19:13 2019
+| Host         : SKY-20170207CJV running 64-bit Service Pack 1  (build 7601)
+| Command      : report_control_sets -verbose -file thinpad_top_control_sets_placed.rpt
+| Design       : thinpad_top
+| Device       : xc7a100t
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    64 |
+| Unused register locations in slices containing registers |    53 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |            1 |
+|      4 |            1 |
+|      8 |            4 |
+|      9 |            1 |
+|     11 |            2 |
+|     15 |            1 |
+|    16+ |           54 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              91 |           41 |
+| No           | No                    | Yes                    |               8 |            3 |
+| No           | Yes                   | No                     |             350 |          145 |
+| Yes          | No                    | No                     |            2071 |          788 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |            1291 |          509 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------------+-----------------------------------------------------------+-----------------------------------+------------------+----------------+
+|       Clock Signal       |                       Enable Signal                       |          Set/Reset Signal         | Slice Load Count | Bel Load Count |
++--------------------------+-----------------------------------------------------------+-----------------------------------+------------------+----------------+
+|  clock_gen/inst/clk_out1 | serial0/ext_uart_r/tickgen/OversamplingTick               |                                   |                1 |              1 |
+|  clock_btn_IBUF_BUFG     | CPU_c/iomn/memc_io_ready                                  | CPU_c/iomn/SS[0]                  |                1 |              4 |
+|  clock_gen/inst/clk_out1 | CPU_c/ex_mem/ext_uart_tx0                                 |                                   |                1 |              8 |
+|  clock_gen/inst/clk_out1 | serial0/ext_uart_r/tickgen/FSM_onehot_RxD_state_reg[2][0] |                                   |                1 |              8 |
+|  clock_gen/inst/clk_out1 | serial0/ext_uart_r/E[0]                                   |                                   |                2 |              8 |
+|  clock_gen/inst/clk_out1 | serial0/ext_uart_t/tickgen/ext_uart_start_reg[0]          |                                   |                2 |              8 |
+|  clock_btn_IBUF_BUFG     | CPU_c/ex_mem/mstatus_SD                                   | reset_btn_IBUF                    |                6 |              9 |
+|  clock_gen/inst/clk_out1 | serial0/ext_uart_t/tickgen/E[0]                           |                                   |                2 |             11 |
+|  clock_gen/inst/clk_out1 | serial0/ext_uart_r/tickgen/RxD_bit_reg_0[0]               |                                   |                2 |             11 |
+|  clock_btn_IBUF_BUFG     |                                                           |                                   |                7 |             15 |
+|  clock_gen/inst/clk_out1 |                                                           | serial0/ext_uart_t/Q[0]           |                7 |             22 |
+|  clock_btn_IBUF_BUFG     | CPU_c/ex_mem/csr_wb_valid_reg_3                           |                                   |               13 |             32 |
+|  clock_btn_IBUF_BUFG     | CPU_c/ex_mem/csr_wb_valid_reg_10                          |                                   |               13 |             32 |
+|  clock_btn_IBUF_BUFG     | CPU_c/ex_mem/csr_wb_valid_reg_10                          | CPU_c/ex_mem/p_19_in              |                9 |             32 |
+|  clock_btn_IBUF_BUFG     | CPU_c/ex_mem/csr_wb_valid_reg_2                           |                                   |               13 |             32 |
+|  clock_btn_IBUF_BUFG     | CPU_c/ex_mem/csr_wb_valid_reg_2                           | CPU_c/ex_mem/p_25_in              |               11 |             32 |
+|  clock_btn_IBUF_BUFG     | CPU_c/ex_mem/csr_wb_valid_reg_3                           | CPU_c/ex_mem/p_25_in              |               15 |             32 |
+|  clock_btn_IBUF_BUFG     | CPU_c/ex_mem/csr_wb_valid_reg_4                           |                                   |               12 |             32 |
+|  clock_btn_IBUF_BUFG     | CPU_c/ex_mem/csr_wb_valid_reg_4                           | CPU_c/ex_mem/p_25_in              |               14 |             32 |
+|  clock_btn_IBUF_BUFG     | CPU_c/ex_mem/csr_wb_valid_reg_5                           |                                   |               11 |             32 |
+|  clock_btn_IBUF_BUFG     | CPU_c/ex_mem/csr_wb_valid_reg_5                           | CPU_c/ex_mem/inter_bits_reg[31]_0 |               13 |             32 |
+|  clock_btn_IBUF_BUFG     | CPU_c/ex_mem/csr_wb_valid_reg_6                           |                                   |                8 |             32 |
+|  clock_btn_IBUF_BUFG     | CPU_c/ex_mem/csr_wb_valid_reg_6                           | CPU_c/ex_mem/inter_bits_reg[31]_0 |               17 |             32 |
+|  clock_btn_IBUF_BUFG     | CPU_c/ex_mem/csr_wb_valid_reg_7                           |                                   |               13 |             32 |
+|  clock_btn_IBUF_BUFG     | CPU_c/ex_mem/csr_wb_valid_reg_7                           | CPU_c/ex_mem/inter_bits_reg[31]_0 |               12 |             32 |
+|  clock_btn_IBUF_BUFG     | CPU_c/ex_mem/csr_wb_valid_reg_8                           |                                   |               14 |             32 |
+|  clock_btn_IBUF_BUFG     | CPU_c/ex_mem/csr_wb_valid_reg_8                           | CPU_c/ex_mem/p_19_in              |               16 |             32 |
+|  clock_btn_IBUF_BUFG     | CPU_c/ex_mem/csr_wb_valid_reg_9                           |                                   |               15 |             32 |
+|  clock_btn_IBUF_BUFG     | CPU_c/ex_mem/csr_wb_valid_reg_9                           | CPU_c/ex_mem/p_19_in              |               14 |             32 |
+|  clock_btn_IBUF_BUFG     | CPU_c/ex_mem/csr_wb_valid_reg_11[0]                       | reset_btn_IBUF                    |               26 |             46 |
+|  clock_btn_IBUF_BUFG     | CPU_c/iomn/mmu_io_if_iom_ready                            | reset_btn_IBUF                    |               18 |             61 |
+|  clock_btn_IBUF_BUFG     | CPU_c/ex_mem/E[0]                                         |                                   |               22 |             64 |
+|  clock_btn_IBUF_BUFG     | CPU_c/ex_mem/csr_wb_csr_idx_reg[0]_0[0]                   |                                   |               21 |             64 |
+|  clock_btn_IBUF_BUFG     | CPU_c/ex_mem/csr_wb_csr_idx_reg[0]_1[0]                   |                                   |               21 |             64 |
+|  clock_btn_IBUF_BUFG     | CPU_c/ex_mem/csr_wb_csr_idx_reg[0]_10[0]                  |                                   |               27 |             64 |
+|  clock_btn_IBUF_BUFG     | CPU_c/ex_mem/csr_wb_csr_idx_reg[0]_11[0]                  |                                   |               24 |             64 |
+|  clock_btn_IBUF_BUFG     | CPU_c/ex_mem/csr_wb_csr_idx_reg[0]_12[0]                  |                                   |               26 |             64 |
+|  clock_btn_IBUF_BUFG     | CPU_c/ex_mem/csr_wb_csr_idx_reg[0]_13[0]                  |                                   |               29 |             64 |
+|  clock_btn_IBUF_BUFG     | CPU_c/ex_mem/csr_wb_csr_idx_reg[0]_14[0]                  |                                   |               18 |             64 |
+|  clock_btn_IBUF_BUFG     | CPU_c/ex_mem/csr_wb_csr_idx_reg[0]_2[0]                   |                                   |               21 |             64 |
+|  clock_btn_IBUF_BUFG     | CPU_c/ex_mem/csr_wb_csr_idx_reg[0]_3[0]                   |                                   |               20 |             64 |
+|  clock_btn_IBUF_BUFG     | CPU_c/ex_mem/csr_wb_csr_idx_reg[0]_4[0]                   |                                   |               31 |             64 |
+|  clock_btn_IBUF_BUFG     | CPU_c/ex_mem/csr_wb_csr_idx_reg[0]_5[0]                   |                                   |               28 |             64 |
+|  clock_btn_IBUF_BUFG     | CPU_c/ex_mem/csr_wb_csr_idx_reg[0]_6[0]                   |                                   |               22 |             64 |
+|  clock_btn_IBUF_BUFG     | CPU_c/ex_mem/csr_wb_csr_idx_reg[0]_7[0]                   |                                   |               30 |             64 |
+|  clock_btn_IBUF_BUFG     | CPU_c/ex_mem/csr_wb_csr_idx_reg[0]_8[0]                   |                                   |               19 |             64 |
+|  clock_btn_IBUF_BUFG     | CPU_c/ex_mem/csr_wb_csr_idx_reg[0]_9[0]                   |                                   |               19 |             64 |
+|  clock_btn_IBUF_BUFG     | CPU_c/ex_mem/csr_wb_csr_idx_reg[1]_0[0]                   |                                   |               36 |             64 |
+|  clock_btn_IBUF_BUFG     | CPU_c/ex_mem/csr_wb_csr_idx_reg[1]_1[0]                   |                                   |               23 |             64 |
+|  clock_btn_IBUF_BUFG     | CPU_c/ex_mem/csr_wb_csr_idx_reg[2]_0[0]                   |                                   |               25 |             64 |
+|  clock_btn_IBUF_BUFG     | CPU_c/ex_mem/csr_wb_csr_idx_reg[6]_0[0]                   |                                   |               22 |             64 |
+|  clock_btn_IBUF_BUFG     | CPU_c/ex_mem/csr_wb_csr_idx_reg[6]_1[0]                   |                                   |               20 |             64 |
+|  clock_btn_IBUF_BUFG     | CPU_c/ex_mem/csr_wb_csr_idx_reg[6]_2[0]                   |                                   |               29 |             64 |
+|  clock_btn_IBUF_BUFG     | CPU_c/ex_mem/csr_wb_valid_reg_12[0]                       |                                   |               40 |             64 |
+|  clock_btn_IBUF_BUFG     | CPU_c/ex_mem/csr_wb_valid_reg_13[0]                       |                                   |               22 |             64 |
+|  clock_btn_IBUF_BUFG     | CPU_c/ex_mem/csr_wb_valid_reg_14[0]                       |                                   |               23 |             64 |
+|  clock_btn_IBUF_BUFG     | CPU_c/ex_mem/csr_wb_valid_reg_15[0]                       |                                   |               25 |             64 |
+|  clock_btn_IBUF_BUFG     | CPU_c/ex_mem/csr_wb_valid_reg_16[0]                       |                                   |               22 |             64 |
+|  clock_btn_IBUF_BUFG     | CPU_c/ex_mem/excep_valid_reg_0[0]                         | reset_btn_IBUF                    |               30 |             64 |
+|  clock_gen/inst/clk_out1 |                                                           | CPU_c/ex_mem/lsm_reg[3]_0         |               35 |             67 |
+|  clock_gen/inst/clk_out1 |                                                           |                                   |               34 |             76 |
+|  clock_btn_IBUF_BUFG     | CPU_c/iomn/regs__T_35_en                                  |                                   |               22 |            176 |
+|  clock_btn_IBUF_BUFG     |                                                           | reset_btn_IBUF                    |              106 |            269 |
+|  clock_btn_IBUF_BUFG     | CPU_c/iomn/memc_io_ready                                  | reset_btn_IBUF                    |              307 |            819 |
++--------------------------+-----------------------------------------------------------+-----------------------------------+------------------+----------------+
+
+
