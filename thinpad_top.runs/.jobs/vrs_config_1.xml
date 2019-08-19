@@ -4,6 +4,10 @@
 	<Run Id="synth_1" LaunchDir="E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
 		<Parent Id="pll_example_synth_1"/>
 	</Run>
+	<Run Id="impl_1" LaunchDir="E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_1"/>
+		<Parent Id="pll_example_synth_1"/>
+	</Run>
 	<Parameters>
 		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
 	</Parameters>

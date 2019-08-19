@@ -2,8 +2,8 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Mon Jul 29 03:14:41 2019
-# Process ID: 4956
+# Start of session at: Mon Aug 19 00:05:04 2019
+# Process ID: 6544
 # Current directory: E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.runs/synth_1
 # Command line: vivado.exe -log thinpad_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source thinpad_top.tcl
 # Log file: E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.runs/synth_1/thinpad_top.vds
@@ -15,56 +15,59 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 9340 
+INFO: Helper process launched with PID 7852 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 366.105 ; gain = 85.512
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 366.449 ; gain = 86.023
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'thinpad_top' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/thinpad_top.v:3]
-INFO: [Synth 8-6157] synthesizing module 'pll_example' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.runs/synth_1/.Xil/Vivado-4956-SKY-20170207CJV/realtime/pll_example_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'pll_example' (1#1) [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.runs/synth_1/.Xil/Vivado-4956-SKY-20170207CJV/realtime/pll_example_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'CPU' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:5707]
+INFO: [Synth 8-6157] synthesizing module 'pll_example' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.runs/synth_1/.Xil/Vivado-6544-SKY-20170207CJV/realtime/pll_example_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'pll_example' (1#1) [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.runs/synth_1/.Xil/Vivado-6544-SKY-20170207CJV/realtime/pll_example_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'CPU' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:6538]
 INFO: [Synth 8-6157] synthesizing module 'InsReader' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:1]
 INFO: [Synth 8-6155] done synthesizing module 'InsReader' (2#1) [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:1]
-INFO: [Synth 8-6157] synthesizing module 'Decoder' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:431]
-INFO: [Synth 8-6157] synthesizing module 'InsType' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:91]
-INFO: [Synth 8-6155] done synthesizing module 'InsType' (3#1) [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:91]
-INFO: [Synth 8-6157] synthesizing module 'ImmGen' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:219]
-INFO: [Synth 8-6155] done synthesizing module 'ImmGen' (4#1) [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:219]
-INFO: [Synth 8-6157] synthesizing module 'ALUGen' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:304]
-INFO: [Synth 8-6155] done synthesizing module 'ALUGen' (5#1) [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:304]
-INFO: [Synth 8-6155] done synthesizing module 'Decoder' (6#1) [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:431]
-INFO: [Synth 8-6157] synthesizing module 'Execute' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:941]
-INFO: [Synth 8-6157] synthesizing module 'ALU' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:689]
-INFO: [Synth 8-6155] done synthesizing module 'ALU' (7#1) [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:689]
-INFO: [Synth 8-6157] synthesizing module 'Branch' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:906]
-INFO: [Synth 8-6157] synthesizing module 'BranchCtrl' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:842]
-INFO: [Synth 8-6155] done synthesizing module 'BranchCtrl' (8#1) [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:842]
-INFO: [Synth 8-6155] done synthesizing module 'Branch' (9#1) [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:906]
-INFO: [Synth 8-6155] done synthesizing module 'Execute' (10#1) [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:941]
-INFO: [Synth 8-6157] synthesizing module 'MemoryCtrl' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:1076]
-INFO: [Synth 8-6155] done synthesizing module 'MemoryCtrl' (11#1) [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:1076]
-INFO: [Synth 8-6157] synthesizing module 'WriteBack' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:1133]
-INFO: [Synth 8-6155] done synthesizing module 'WriteBack' (12#1) [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:1133]
-INFO: [Synth 8-6157] synthesizing module 'RegCtrl' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:1145]
-INFO: [Synth 8-6155] done synthesizing module 'RegCtrl' (13#1) [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:1145]
-INFO: [Synth 8-6157] synthesizing module 'MMU' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:1241]
-INFO: [Synth 8-6155] done synthesizing module 'MMU' (14#1) [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:1241]
-INFO: [Synth 8-6157] synthesizing module 'IOManager' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:1318]
-INFO: [Synth 8-6155] done synthesizing module 'IOManager' (15#1) [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:1318]
-INFO: [Synth 8-6157] synthesizing module 'IF_ID' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:1592]
-INFO: [Synth 8-6155] done synthesizing module 'IF_ID' (16#1) [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:1592]
-INFO: [Synth 8-6157] synthesizing module 'ID_EX' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:1767]
-INFO: [Synth 8-6155] done synthesizing module 'ID_EX' (17#1) [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:1767]
-INFO: [Synth 8-6157] synthesizing module 'EX_MEM' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:2211]
-INFO: [Synth 8-6155] done synthesizing module 'EX_MEM' (18#1) [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:2211]
-INFO: [Synth 8-6157] synthesizing module 'MEM_WB' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:2551]
-INFO: [Synth 8-6155] done synthesizing module 'MEM_WB' (19#1) [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:2551]
-INFO: [Synth 8-6157] synthesizing module 'CSR' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:2642]
-INFO: [Synth 8-6155] done synthesizing module 'CSR' (20#1) [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:2642]
-INFO: [Synth 8-6155] done synthesizing module 'CPU' (21#1) [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:5707]
+INFO: [Synth 8-6157] synthesizing module 'Decoder' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:473]
+INFO: [Synth 8-6157] synthesizing module 'InsType' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:97]
+INFO: [Synth 8-6155] done synthesizing module 'InsType' (3#1) [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:97]
+INFO: [Synth 8-6157] synthesizing module 'ImmGen' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:225]
+INFO: [Synth 8-6155] done synthesizing module 'ImmGen' (4#1) [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:225]
+INFO: [Synth 8-6157] synthesizing module 'ALUGen' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:310]
+INFO: [Synth 8-6155] done synthesizing module 'ALUGen' (5#1) [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:310]
+INFO: [Synth 8-6155] done synthesizing module 'Decoder' (6#1) [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:473]
+INFO: [Synth 8-6157] synthesizing module 'Execute' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:1107]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:753]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (7#1) [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:753]
+INFO: [Synth 8-6157] synthesizing module 'Branch' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:1072]
+INFO: [Synth 8-6157] synthesizing module 'BranchCtrl' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:1008]
+INFO: [Synth 8-6155] done synthesizing module 'BranchCtrl' (8#1) [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:1008]
+INFO: [Synth 8-6155] done synthesizing module 'Branch' (9#1) [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:1072]
+INFO: [Synth 8-6155] done synthesizing module 'Execute' (10#1) [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:1107]
+INFO: [Synth 8-6157] synthesizing module 'MemoryCtrl' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:1245]
+INFO: [Synth 8-6155] done synthesizing module 'MemoryCtrl' (11#1) [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:1245]
+INFO: [Synth 8-6157] synthesizing module 'WriteBack' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:1305]
+INFO: [Synth 8-6155] done synthesizing module 'WriteBack' (12#1) [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:1305]
+INFO: [Synth 8-6157] synthesizing module 'RegCtrl' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:1317]
+INFO: [Synth 8-6155] done synthesizing module 'RegCtrl' (13#1) [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:1317]
+INFO: [Synth 8-6157] synthesizing module 'MMU' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:1870]
+INFO: [Synth 8-6157] synthesizing module 'PTW' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:1397]
+INFO: [Synth 8-6155] done synthesizing module 'PTW' (14#1) [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:1397]
+INFO: [Synth 8-6155] done synthesizing module 'MMU' (15#1) [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:1870]
+INFO: [Synth 8-6157] synthesizing module 'IOManager' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:2658]
+INFO: [Synth 8-6155] done synthesizing module 'IOManager' (16#1) [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:2658]
+INFO: [Synth 8-6157] synthesizing module 'IF_ID' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:2988]
+INFO: [Synth 8-6155] done synthesizing module 'IF_ID' (17#1) [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:2988]
+INFO: [Synth 8-6157] synthesizing module 'ID_EX' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3261]
+INFO: [Synth 8-6155] done synthesizing module 'ID_EX' (18#1) [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3261]
+INFO: [Synth 8-6157] synthesizing module 'EX_MEM' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3777]
+INFO: [Synth 8-6155] done synthesizing module 'EX_MEM' (19#1) [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3777]
+INFO: [Synth 8-6157] synthesizing module 'MEM_WB' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4211]
+INFO: [Synth 8-6155] done synthesizing module 'MEM_WB' (20#1) [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4211]
+INFO: [Synth 8-6157] synthesizing module 'CSR' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4302]
+INFO: [Synth 8-6155] done synthesizing module 'CSR' (21#1) [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4302]
+INFO: [Synth 8-6155] done synthesizing module 'CPU' (22#1) [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:6538]
 INFO: [Synth 8-6157] synthesizing module 'SEG7_LUT' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/SEG7_LUT.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'SEG7_LUT' (22#1) [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/SEG7_LUT.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'SEG7_LUT' (23#1) [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/SEG7_LUT.v:1]
 INFO: [Synth 8-6157] synthesizing module 'serial' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/serial.v:36]
+	Parameter ClkFrequency bound to: 20000000 - type: integer 
 	Parameter NOP bound to: 4'b1111 
 	Parameter LB bound to: 4'b1000 
 	Parameter LBU bound to: 4'b1100 
@@ -77,35 +80,34 @@ INFO: [Synth 8-6157] synthesizing module 'serial' [E:/Xilinx_pro/riscv/thinpad_t
 	Parameter SH bound to: 4'b0001 
 	Parameter SW bound to: 4'b0010 
 	Parameter SD bound to: 4'b0011 
-WARNING: [Synth 8-567] referenced signal 'mode' should be on the sensitivity list [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/serial.v:50]
 INFO: [Synth 8-6157] synthesizing module 'async_receiver' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/async.v:75]
-	Parameter ClkFrequency bound to: 50000000 - type: integer 
+	Parameter ClkFrequency bound to: 20000000 - type: integer 
 	Parameter Baud bound to: 9600 - type: integer 
 	Parameter Oversampling bound to: 8 - type: integer 
 	Parameter l2o bound to: 4 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'BaudTickGen' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/async.v:189]
-	Parameter ClkFrequency bound to: 50000000 - type: integer 
+	Parameter ClkFrequency bound to: 20000000 - type: integer 
 	Parameter Baud bound to: 9600 - type: integer 
 	Parameter Oversampling bound to: 8 - type: integer 
-	Parameter AccWidth bound to: 21 - type: integer 
-	Parameter ShiftLimiter bound to: 7 - type: integer 
-	Parameter Inc bound to: 3221 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'BaudTickGen' (23#1) [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/async.v:189]
-INFO: [Synth 8-6155] done synthesizing module 'async_receiver' (24#1) [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/async.v:75]
-WARNING: [Synth 8-350] instance 'ext_uart_r' of module 'async_receiver' requires 7 connections, but only 5 given [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/serial.v:107]
+	Parameter AccWidth bound to: 20 - type: integer 
+	Parameter ShiftLimiter bound to: 6 - type: integer 
+	Parameter Inc bound to: 4027 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'BaudTickGen' (24#1) [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/async.v:189]
+INFO: [Synth 8-6155] done synthesizing module 'async_receiver' (25#1) [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/async.v:75]
+WARNING: [Synth 8-350] instance 'ext_uart_r' of module 'async_receiver' requires 7 connections, but only 5 given [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/serial.v:160]
 INFO: [Synth 8-6157] synthesizing module 'async_transmitter' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/async.v:14]
-	Parameter ClkFrequency bound to: 50000000 - type: integer 
+	Parameter ClkFrequency bound to: 20000000 - type: integer 
 	Parameter Baud bound to: 9600 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'BaudTickGen__parameterized0' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/async.v:189]
-	Parameter ClkFrequency bound to: 50000000 - type: integer 
+	Parameter ClkFrequency bound to: 20000000 - type: integer 
 	Parameter Baud bound to: 9600 - type: integer 
 	Parameter Oversampling bound to: 1 - type: integer 
-	Parameter AccWidth bound to: 21 - type: integer 
-	Parameter ShiftLimiter bound to: 4 - type: integer 
-	Parameter Inc bound to: 403 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'BaudTickGen__parameterized0' (24#1) [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/async.v:189]
-INFO: [Synth 8-6155] done synthesizing module 'async_transmitter' (25#1) [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/async.v:14]
-INFO: [Synth 8-6155] done synthesizing module 'serial' (26#1) [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/serial.v:36]
+	Parameter AccWidth bound to: 20 - type: integer 
+	Parameter ShiftLimiter bound to: 3 - type: integer 
+	Parameter Inc bound to: 503 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'BaudTickGen__parameterized0' (25#1) [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/async.v:189]
+INFO: [Synth 8-6155] done synthesizing module 'async_transmitter' (26#1) [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/async.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'serial' (27#1) [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/serial.v:36]
 INFO: [Synth 8-6157] synthesizing module 'ram' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/ram.v:7]
 	Parameter NOP bound to: 4'b1111 
 	Parameter LB bound to: 4'b1000 
@@ -120,8 +122,7 @@ INFO: [Synth 8-6157] synthesizing module 'ram' [E:/Xilinx_pro/riscv/thinpad_top/
 	Parameter SW bound to: 4'b0010 
 	Parameter SD bound to: 4'b0011 
 WARNING: [Synth 8-3936] Found unconnected internal register 'lock_addr_reg' and it is trimmed from '64' to '23' bits. [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/ram.v:57]
-INFO: [Synth 8-6155] done synthesizing module 'ram' (27#1) [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/ram.v:7]
-WARNING: [Synth 8-6014] Unused sequential element reset_of_clk10M_reg was removed.  [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/thinpad_top.v:101]
+INFO: [Synth 8-6155] done synthesizing module 'ram' (28#1) [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/ram.v:7]
 WARNING: [Synth 8-3848] Net uart_rdn in module/entity thinpad_top does not have driver. [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/thinpad_top.v:17]
 WARNING: [Synth 8-3848] Net uart_wrn in module/entity thinpad_top does not have driver. [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/thinpad_top.v:18]
 WARNING: [Synth 8-3848] Net flash_a in module/entity thinpad_top does not have driver. [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/thinpad_top.v:44]
@@ -149,7 +150,7 @@ WARNING: [Synth 8-3848] Net video_hsync in module/entity thinpad_top does not ha
 WARNING: [Synth 8-3848] Net video_vsync in module/entity thinpad_top does not have driver. [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/thinpad_top.v:78]
 WARNING: [Synth 8-3848] Net video_clk in module/entity thinpad_top does not have driver. [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/thinpad_top.v:79]
 WARNING: [Synth 8-3848] Net video_de in module/entity thinpad_top does not have driver. [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/thinpad_top.v:80]
-INFO: [Synth 8-6155] done synthesizing module 'thinpad_top' (28#1) [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/thinpad_top.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'thinpad_top' (29#1) [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/thinpad_top.v:3]
 WARNING: [Synth 8-3331] design ram has unconnected port addr[63]
 WARNING: [Synth 8-3331] design ram has unconnected port addr[62]
 WARNING: [Synth 8-3331] design ram has unconnected port addr[61]
@@ -252,7 +253,7 @@ WARNING: [Synth 8-3331] design serial has unconnected port addr[6]
 WARNING: [Synth 8-3331] design serial has unconnected port addr[5]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 623.480 ; gain = 342.887
+Finished RTL Elaboration : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 649.652 ; gain = 369.227
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -265,10 +266,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 623.480 ; gain = 342.887
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:29 . Memory (MB): peak = 649.652 ; gain = 369.227
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 623.480 ; gain = 342.887
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:29 . Memory (MB): peak = 649.652 ; gain = 369.227
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tfgg676-2L
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -286,24 +287,24 @@ Finished Parsing XDC File [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/cons
 WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/constrs_1/new/thinpad_top.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/thinpad_top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/constrs_1/new/thinpad_top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/thinpad_top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/thinpad_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1035.398 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1075.207 ; gain = 0.484
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1036.813 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1078.797 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1036.813 ; gain = 0.000
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.134 . Memory (MB): peak = 1036.813 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1078.797 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.094 . Memory (MB): peak = 1078.797 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:44 ; elapsed = 00:00:48 . Memory (MB): peak = 1037.816 ; gain = 757.223
+Finished Constraint Validation : Time (s): cpu = 00:00:50 ; elapsed = 00:01:01 . Memory (MB): peak = 1079.801 ; gain = 799.375
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tfgg676-2L
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:44 ; elapsed = 00:00:49 . Memory (MB): peak = 1037.816 ; gain = 757.223
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:50 ; elapsed = 00:01:01 . Memory (MB): peak = 1079.801 ; gain = 799.375
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -312,114 +313,119 @@ Applied set_property IO_BUFFER_TYPE = NONE for clk_50M. (constraint file  e:/Xil
 Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_50M. (constraint file  e:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/ip/pll_example/pll_example/pll_example_in_context.xdc, line 5).
 Applied set_property DONT_TOUCH = true for clock_gen. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:44 ; elapsed = 00:00:49 . Memory (MB): peak = 1037.816 ; gain = 757.223
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:50 ; elapsed = 00:01:01 . Memory (MB): peak = 1079.801 ; gain = 799.375
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5544] ROM "io_mmu_mode" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "_T_68" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "_T_72" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "_T_82" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "_T_74" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:936]
-INFO: [Synth 8-4471] merging register 'csr_reg[3][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[4][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[6][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[7][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[8][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[9][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[10][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[11][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[12][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[13][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[14][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[15][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[16][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[17][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[18][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[19][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[20][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[21][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[22][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[23][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[24][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[25][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[26][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[27][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[28][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[29][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[30][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[31][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[32][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[33][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[34][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[35][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[36][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[37][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[38][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[39][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[40][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[41][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[42][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[43][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[44][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[45][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[46][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[47][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[48][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[49][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[50][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[51][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[52][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[53][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[54][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[55][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[56][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[57][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[58][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[59][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[60][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[61][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[62][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[63][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[69][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[70][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[71][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[72][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[73][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[74][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[75][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[76][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[77][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[78][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[79][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[80][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[81][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[82][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[83][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[84][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[85][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[86][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[87][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[88][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[89][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[90][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[91][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[92][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[93][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[94][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[95][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[96][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[97][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[98][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[99][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[100][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[101][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[102][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[103][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[104][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[105][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[106][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[107][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
-INFO: [Synth 8-4471] merging register 'csr_reg[108][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3294]
+INFO: [Synth 8-5544] ROM "_T_118" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "_T_110" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 16 [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:952]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:1102]
+INFO: [Synth 8-5544] ROM "_T_87" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wait_status" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wait_status" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wait_status" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-4471] merging register 'excep_value_reg[63:0]' into 'excep_code_reg[63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:3071]
+INFO: [Synth 8-4471] merging register 'csr_reg[3][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[4][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[6][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[7][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[8][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[9][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[10][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[11][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[12][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[13][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[14][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[15][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[16][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[17][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[18][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[19][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[20][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[21][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[22][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[23][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[24][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[25][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[26][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[27][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[28][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[29][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[30][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[31][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[32][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[33][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[34][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[35][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[36][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[37][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[38][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[39][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[40][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[41][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[42][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[43][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[44][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[45][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[46][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[47][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[48][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[49][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[50][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[51][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[52][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[53][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[54][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[55][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[56][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[57][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[58][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[59][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[60][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[61][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[62][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[63][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[69][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[70][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[71][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[72][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[73][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[74][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[75][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[76][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[77][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[78][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[79][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[80][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[81][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[82][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[83][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[84][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[85][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[86][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[87][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[88][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[89][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[90][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[91][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[92][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[93][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[94][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[95][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[96][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[97][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[98][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[99][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[100][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[101][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[102][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[103][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[104][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[105][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[106][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
+INFO: [Synth 8-4471] merging register 'csr_reg[107][63:0]' into 'csr_reg[2][63:0]' [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:4960]
 INFO: [Common 17-14] Message 'Synth 8-4471' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-5544] ROM "inter_new_mode" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-802] inferred FSM for state register 'RxD_state_reg' in module 'async_receiver'
@@ -427,6 +433,7 @@ INFO: [Synth 8-5544] ROM "RxD_bit" won't be mapped to Block RAM because address 
 INFO: [Synth 8-5544] ROM "RxD_bit" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "OversamplingCnt0" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-802] inferred FSM for state register 'TxD_state_reg' in module 'async_transmitter'
+INFO: [Synth 8-5544] ROM "lock_wdata" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -460,77 +467,105 @@ INFO: [Synth 8-3354] encoded FSM with state register 'RxD_state_reg' using encod
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'TxD_state_reg' using encoding 'one-hot' in module 'async_transmitter'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:49 ; elapsed = 00:00:53 . Memory (MB): peak = 1037.816 ; gain = 757.223
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:57 ; elapsed = 00:01:08 . Memory (MB): peak = 1079.801 ; gain = 799.375
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
++------+---------------------+------------+----------+
+|      |RTL Partition        |Replication |Instances |
++------+---------------------+------------+----------+
+|1     |datapath__47_ALU__GD |           1|     16576|
+|2     |ALU__GB1             |           1|     10196|
+|3     |ALU__GB2             |           1|     19586|
+|4     |datapath__51_ALU__GD |           1|     17541|
+|5     |ALU__GB4             |           1|     17743|
+|6     |ALU__GB5             |           1|     21432|
+|7     |Execute__GC0         |           1|      1870|
+|8     |CPU__GC0             |           1|     23425|
+|9     |thinpad_top__GC0     |           1|      3590|
++------+---------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     64 Bit       Adders := 7     
+	   4 Input    128 Bit       Adders := 1     
+	   2 Input     65 Bit       Adders := 2     
+	   2 Input     64 Bit       Adders := 15    
 	   3 Input     64 Bit       Adders := 2     
-	   2 Input     32 Bit       Adders := 1     
+	   2 Input     33 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 5     
 	   3 Input     32 Bit       Adders := 1     
-	   2 Input     22 Bit       Adders := 2     
+	   2 Input     21 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 5     
 	   2 Input      6 Bit       Adders := 1     
 	   2 Input      3 Bit       Adders := 1     
 	   2 Input      2 Bit       Adders := 1     
 +---XORs : 
 	   2 Input     64 Bit         XORs := 1     
 +---Registers : 
-	               64 Bit    Registers := 53    
-	               32 Bit    Registers := 9     
+	               64 Bit    Registers := 66    
+	               32 Bit    Registers := 3     
 	               27 Bit    Registers := 1     
 	               23 Bit    Registers := 1     
-	               22 Bit    Registers := 2     
+	               21 Bit    Registers := 2     
 	               12 Bit    Registers := 2     
-	                9 Bit    Registers := 1     
-	                8 Bit    Registers := 5     
+	                9 Bit    Registers := 5     
+	                8 Bit    Registers := 6     
+	                7 Bit    Registers := 3     
 	                6 Bit    Registers := 1     
 	                5 Bit    Registers := 4     
-	                4 Bit    Registers := 5     
+	                4 Bit    Registers := 8     
 	                3 Bit    Registers := 1     
-	                2 Bit    Registers := 11    
-	                1 Bit    Registers := 33    
+	                2 Bit    Registers := 16    
+	                1 Bit    Registers := 45    
++---Multipliers : 
+	                64x65  Multipliers := 1     
+	                64x64  Multipliers := 1     
+	                32x32  Multipliers := 1     
 +---RAMs : 
 	               2K Bit         RAMs := 1     
 +---Muxes : 
-	   2 Input     64 Bit        Muxes := 54    
+	   2 Input     65 Bit        Muxes := 2     
+	   2 Input     64 Bit        Muxes := 105   
 	   5 Input     64 Bit        Muxes := 1     
+	   6 Input     64 Bit        Muxes := 1     
 	  38 Input     64 Bit        Muxes := 1     
 	   8 Input     64 Bit        Muxes := 1     
-	   2 Input     32 Bit        Muxes := 12    
-	   4 Input     32 Bit        Muxes := 1     
-	   6 Input     32 Bit        Muxes := 1     
-	  27 Input     16 Bit        Muxes := 1     
+	   4 Input     64 Bit        Muxes := 1     
+	   4 Input     39 Bit        Muxes := 2     
+	   2 Input     39 Bit        Muxes := 6     
+	   2 Input     33 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 9     
+	   4 Input     32 Bit        Muxes := 3     
+	   5 Input     32 Bit        Muxes := 2     
 	   2 Input     16 Bit        Muxes := 1     
 	  11 Input     11 Bit        Muxes := 2     
 	   2 Input     11 Bit        Muxes := 2     
+	   4 Input      9 Bit        Muxes := 4     
+	   2 Input      9 Bit        Muxes := 44    
 	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 5     
 	1024 Input      6 Bit        Muxes := 1     
-	   2 Input      5 Bit        Muxes := 7     
-	   4 Input      5 Bit        Muxes := 1     
-	   2 Input      4 Bit        Muxes := 15    
+	   8 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 4     
+	   3 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 32    
 	   7 Input      4 Bit        Muxes := 1     
-	  12 Input      4 Bit        Muxes := 1     
 	  11 Input      4 Bit        Muxes := 2     
 	   3 Input      4 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
 	  14 Input      3 Bit        Muxes := 1     
 	   5 Input      3 Bit        Muxes := 1     
-	   7 Input      3 Bit        Muxes := 1     
 	  11 Input      3 Bit        Muxes := 1     
-	   2 Input      2 Bit        Muxes := 11    
-	   3 Input      2 Bit        Muxes := 1     
-	   4 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 91    
-	   4 Input      1 Bit        Muxes := 2     
-	   5 Input      1 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 20    
+	   3 Input      2 Bit        Muxes := 2     
+	   5 Input      2 Bit        Muxes := 6     
+	   7 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 164   
+	   5 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 3     
 	  11 Input      1 Bit        Muxes := 2     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -543,9 +578,50 @@ Module thinpad_top
 Detailed RTL Component Info : 
 +---Registers : 
 	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
 +---Muxes : 
-	  27 Input     16 Bit        Muxes := 1     
 	   2 Input     16 Bit        Muxes := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input    128 Bit       Adders := 1     
+	   2 Input     65 Bit       Adders := 2     
+	   2 Input     64 Bit       Adders := 5     
+	   3 Input     64 Bit       Adders := 1     
+	   2 Input     33 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 5     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     64 Bit         XORs := 1     
++---Multipliers : 
+	                64x65  Multipliers := 1     
+	                64x64  Multipliers := 1     
+	                32x32  Multipliers := 1     
++---Muxes : 
+	   2 Input     65 Bit        Muxes := 2     
+	   2 Input     64 Bit        Muxes := 6     
+	   2 Input     33 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 6     
+Module BranchCtrl 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     64 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module Branch 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+Module Execute 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 3     
++---Muxes : 
+	   5 Input     64 Bit        Muxes := 1     
+	   2 Input     64 Bit        Muxes := 3     
+	   7 Input      3 Bit        Muxes := 1     
 Module InsReader 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -569,54 +645,22 @@ Detailed RTL Component Info :
 Module ALUGen 
 Detailed RTL Component Info : 
 +---Muxes : 
-	   2 Input      4 Bit        Muxes := 3     
-	  12 Input      4 Bit        Muxes := 1     
+	   8 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 2     
 	   2 Input      2 Bit        Muxes := 1     
 Module Decoder 
 Detailed RTL Component Info : 
 +---Muxes : 
-	   2 Input     64 Bit        Muxes := 6     
-	   2 Input     32 Bit        Muxes := 3     
-	   2 Input      5 Bit        Muxes := 5     
-	   4 Input      5 Bit        Muxes := 1     
+	   2 Input     64 Bit        Muxes := 16    
+	   3 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
 	   2 Input      4 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 4     
-Module ALU 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input     64 Bit       Adders := 1     
-	   3 Input     64 Bit       Adders := 1     
-	   2 Input     32 Bit       Adders := 1     
-	   3 Input     32 Bit       Adders := 1     
-+---XORs : 
-	   2 Input     64 Bit         XORs := 1     
-+---Muxes : 
-	   6 Input     32 Bit        Muxes := 1     
-Module BranchCtrl 
-Detailed RTL Component Info : 
-+---Adders : 
-	   3 Input     64 Bit       Adders := 1     
-+---Muxes : 
-	   2 Input      1 Bit        Muxes := 3     
-Module Branch 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input     64 Bit       Adders := 1     
-+---Muxes : 
-	   2 Input     64 Bit        Muxes := 1     
-Module Execute 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input     64 Bit       Adders := 3     
-+---Muxes : 
-	   5 Input     64 Bit        Muxes := 1     
-	   2 Input     64 Bit        Muxes := 3     
-	   7 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 8     
 Module MemoryCtrl 
 Detailed RTL Component Info : 
 +---Muxes : 
-	   2 Input     64 Bit        Muxes := 1     
-	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     64 Bit        Muxes := 2     
 	   2 Input      4 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 1     
 Module RegCtrl 
@@ -625,55 +669,109 @@ Detailed RTL Component Info :
 	               2K Bit         RAMs := 1     
 +---Muxes : 
 	   2 Input     64 Bit        Muxes := 2     
-Module MMU 
+Module PTW__1 
 Detailed RTL Component Info : 
 +---Registers : 
-	               64 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	                9 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     39 Bit        Muxes := 1     
+	   2 Input     39 Bit        Muxes := 3     
+	   5 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 1     
+	   4 Input      9 Bit        Muxes := 2     
+	   2 Input      9 Bit        Muxes := 22    
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 2     
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 17    
+Module PTW 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                9 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     39 Bit        Muxes := 1     
+	   2 Input     39 Bit        Muxes := 3     
+	   5 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 1     
+	   4 Input      9 Bit        Muxes := 2     
+	   2 Input      9 Bit        Muxes := 22    
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 2     
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 17    
+Module MMU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 2     
++---Registers : 
+	               64 Bit    Registers := 5     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 26    
+	   6 Input     64 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 11    
+	   5 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 4     
+	   4 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 20    
 Module IOManager 
 Detailed RTL Component Info : 
 +---Registers : 
 	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
 +---Muxes : 
 	   2 Input     64 Bit        Muxes := 16    
 	   2 Input      4 Bit        Muxes := 7     
-	   2 Input      2 Bit        Muxes := 3     
-	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
 	   4 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 13    
+	   2 Input      1 Bit        Muxes := 10    
 Module IF_ID 
 Detailed RTL Component Info : 
 +---Registers : 
-	               64 Bit    Registers := 3     
-	               32 Bit    Registers := 2     
+	               64 Bit    Registers := 5     
+	               32 Bit    Registers := 1     
 	                5 Bit    Registers := 1     
-	                1 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
 +---Muxes : 
-	   2 Input     64 Bit        Muxes := 2     
-	   2 Input     32 Bit        Muxes := 2     
-	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
 Module ID_EX 
 Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
 +---Registers : 
-	               64 Bit    Registers := 5     
-	               32 Bit    Registers := 3     
+	               64 Bit    Registers := 8     
 	               12 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
 	                5 Bit    Registers := 1     
 	                4 Bit    Registers := 3     
-	                1 Bit    Registers := 5     
+	                1 Bit    Registers := 6     
 +---Muxes : 
-	   2 Input     64 Bit        Muxes := 2     
-	   2 Input     32 Bit        Muxes := 3     
+	   2 Input     64 Bit        Muxes := 4     
+	   2 Input      7 Bit        Muxes := 1     
 	   2 Input      5 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
 Module EX_MEM 
 Detailed RTL Component Info : 
 +---Registers : 
-	               64 Bit    Registers := 4     
-	               32 Bit    Registers := 4     
+	               64 Bit    Registers := 8     
 	               12 Bit    Registers := 1     
 	                5 Bit    Registers := 1     
 	                4 Bit    Registers := 1     
-	                1 Bit    Registers := 5     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 7     
 Module MEM_WB 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -682,6 +780,8 @@ Detailed RTL Component Info :
 	                1 Bit    Registers := 1     
 Module CSR 
 Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 2     
 +---Registers : 
 	               64 Bit    Registers := 38    
 	               27 Bit    Registers := 1     
@@ -689,21 +789,27 @@ Detailed RTL Component Info :
 	                2 Bit    Registers := 7     
 	                1 Bit    Registers := 16    
 +---Muxes : 
-	   2 Input     64 Bit        Muxes := 10    
+	   2 Input     64 Bit        Muxes := 17    
 	  38 Input     64 Bit        Muxes := 1     
 	   8 Input     64 Bit        Muxes := 1     
+	   4 Input     64 Bit        Muxes := 1     
 	1024 Input      6 Bit        Muxes := 1     
 	  11 Input      3 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 6     
+	   4 Input      2 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 62    
-	   4 Input      1 Bit        Muxes := 2     
-	   5 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 3     
+Module CPU 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
 Module BaudTickGen 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     22 Bit       Adders := 1     
+	   2 Input     21 Bit       Adders := 1     
 +---Registers : 
-	               22 Bit    Registers := 1     
+	               21 Bit    Registers := 1     
 Module async_receiver 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -726,9 +832,9 @@ Detailed RTL Component Info :
 Module BaudTickGen__parameterized0 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     22 Bit       Adders := 1     
+	   2 Input     21 Bit       Adders := 1     
 +---Registers : 
-	               22 Bit    Registers := 1     
+	               21 Bit    Registers := 1     
 Module async_transmitter 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -742,11 +848,17 @@ Detailed RTL Component Info :
 	   2 Input      1 Bit        Muxes := 1     
 Module serial 
 Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 4     
 +---Registers : 
-	                8 Bit    Registers := 2     
+	                8 Bit    Registers := 3     
+	                7 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
 	                1 Bit    Registers := 2     
 +---Muxes : 
-	   2 Input      1 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
 Module ram 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -771,183 +883,428 @@ BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 2 processes.
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-Warning: Parallel synthesis criteria is not met 
-WARNING: [Synth 8-3917] design thinpad_top has port dpy0[0] driven by constant 0
-WARNING: [Synth 8-3917] design thinpad_top has port dpy1[0] driven by constant 0
-INFO: [Synth 8-3886] merging instance 'CPU_c/id_ex/excep_code_reg[30]' (FDRE) to 'CPU_c/id_ex/excep_code_reg[31]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/id_ex/excep_code_reg[27]' (FDRE) to 'CPU_c/id_ex/excep_code_reg[31]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/id_ex/excep_code_reg[26]' (FDRE) to 'CPU_c/id_ex/excep_code_reg[31]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/id_ex/excep_code_reg[25]' (FDRE) to 'CPU_c/id_ex/excep_code_reg[31]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/id_ex/excep_code_reg[24]' (FDRE) to 'CPU_c/id_ex/excep_code_reg[31]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/id_ex/excep_code_reg[23]' (FDRE) to 'CPU_c/id_ex/excep_code_reg[31]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/id_ex/excep_code_reg[22]' (FDRE) to 'CPU_c/id_ex/excep_code_reg[31]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/id_ex/excep_code_reg[21]' (FDRE) to 'CPU_c/id_ex/excep_code_reg[31]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/id_ex/excep_code_reg[20]' (FDRE) to 'CPU_c/id_ex/excep_code_reg[31]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/id_ex/excep_code_reg[19]' (FDRE) to 'CPU_c/id_ex/excep_code_reg[31]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/id_ex/excep_code_reg[18]' (FDRE) to 'CPU_c/id_ex/excep_code_reg[31]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/id_ex/excep_code_reg[17]' (FDRE) to 'CPU_c/id_ex/excep_code_reg[31]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/id_ex/excep_code_reg[16]' (FDRE) to 'CPU_c/id_ex/excep_code_reg[31]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/id_ex/excep_code_reg[15]' (FDRE) to 'CPU_c/id_ex/excep_code_reg[31]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/id_ex/excep_code_reg[14]' (FDRE) to 'CPU_c/id_ex/excep_code_reg[31]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/id_ex/excep_code_reg[13]' (FDRE) to 'CPU_c/id_ex/excep_code_reg[31]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/id_ex/excep_code_reg[12]' (FDRE) to 'CPU_c/id_ex/excep_code_reg[31]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/id_ex/excep_code_reg[11]' (FDRE) to 'CPU_c/id_ex/excep_code_reg[31]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/id_ex/excep_code_reg[10]' (FDRE) to 'CPU_c/id_ex/excep_code_reg[31]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/id_ex/excep_code_reg[9]' (FDRE) to 'CPU_c/id_ex/excep_code_reg[31]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/id_ex/excep_code_reg[8]' (FDRE) to 'CPU_c/id_ex/excep_code_reg[31]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/id_ex/excep_code_reg[7]' (FDRE) to 'CPU_c/id_ex/excep_code_reg[31]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/id_ex/excep_code_reg[6]' (FDRE) to 'CPU_c/id_ex/excep_code_reg[31]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/id_ex/excep_code_reg[5]' (FDRE) to 'CPU_c/id_ex/excep_code_reg[31]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/id_ex/excep_code_reg[28]' (FDRE) to 'CPU_c/id_ex/excep_code_reg[31]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/id_ex/excep_code_reg[29]' (FDRE) to 'CPU_c/id_ex/excep_code_reg[31]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (CPU_c/id_ex/\excep_code_reg[31] )
-INFO: [Synth 8-3886] merging instance 'CPU_c/ex_mem/inter_bits_reg[4]' (FDRE) to 'CPU_c/ex_mem/inter_bits_reg[5]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/ex_mem/inter_bits_reg[30]' (FDRE) to 'CPU_c/ex_mem/inter_bits_reg[5]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/ex_mem/inter_bits_reg[27]' (FDRE) to 'CPU_c/ex_mem/inter_bits_reg[5]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/ex_mem/inter_bits_reg[26]' (FDRE) to 'CPU_c/ex_mem/inter_bits_reg[5]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/ex_mem/inter_bits_reg[25]' (FDRE) to 'CPU_c/ex_mem/inter_bits_reg[5]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/ex_mem/inter_bits_reg[24]' (FDRE) to 'CPU_c/ex_mem/inter_bits_reg[5]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/ex_mem/inter_bits_reg[23]' (FDRE) to 'CPU_c/ex_mem/inter_bits_reg[5]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/ex_mem/inter_bits_reg[22]' (FDRE) to 'CPU_c/ex_mem/inter_bits_reg[5]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/ex_mem/inter_bits_reg[21]' (FDRE) to 'CPU_c/ex_mem/inter_bits_reg[5]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/ex_mem/inter_bits_reg[20]' (FDRE) to 'CPU_c/ex_mem/inter_bits_reg[5]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/ex_mem/inter_bits_reg[19]' (FDRE) to 'CPU_c/ex_mem/inter_bits_reg[5]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/ex_mem/inter_bits_reg[18]' (FDRE) to 'CPU_c/ex_mem/inter_bits_reg[5]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/ex_mem/inter_bits_reg[17]' (FDRE) to 'CPU_c/ex_mem/inter_bits_reg[5]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/ex_mem/inter_bits_reg[16]' (FDRE) to 'CPU_c/ex_mem/inter_bits_reg[5]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/ex_mem/inter_bits_reg[15]' (FDRE) to 'CPU_c/ex_mem/inter_bits_reg[5]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/ex_mem/inter_bits_reg[14]' (FDRE) to 'CPU_c/ex_mem/inter_bits_reg[5]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/ex_mem/inter_bits_reg[13]' (FDRE) to 'CPU_c/ex_mem/inter_bits_reg[5]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/ex_mem/inter_bits_reg[12]' (FDRE) to 'CPU_c/ex_mem/inter_bits_reg[5]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/ex_mem/inter_bits_reg[11]' (FDRE) to 'CPU_c/ex_mem/inter_bits_reg[5]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/ex_mem/inter_bits_reg[10]' (FDRE) to 'CPU_c/ex_mem/inter_bits_reg[5]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/ex_mem/inter_bits_reg[9]' (FDRE) to 'CPU_c/ex_mem/inter_bits_reg[5]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/ex_mem/inter_bits_reg[8]' (FDRE) to 'CPU_c/ex_mem/inter_bits_reg[5]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/ex_mem/inter_bits_reg[7]' (FDRE) to 'CPU_c/ex_mem/inter_bits_reg[5]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/ex_mem/inter_bits_reg[6]' (FDRE) to 'CPU_c/ex_mem/inter_bits_reg[5]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/ex_mem/inter_bits_reg[5]' (FDRE) to 'CPU_c/ex_mem/inter_bits_reg[28]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/ex_mem/inter_bits_reg[28]' (FDRE) to 'CPU_c/ex_mem/inter_bits_reg[29]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (CPU_c/\ex_mem/inter_bits_reg[29] )
-INFO: [Synth 8-3886] merging instance 'CPU_c/mmu/if_addr_reg[0]' (FDRE) to 'CPU_c/mmu/if_addr_reg[2]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/mmu/if_addr_reg[1]' (FDRE) to 'CPU_c/mmu/if_addr_reg[2]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (CPU_c/mmu/\if_addr_reg[2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (CPU_c/csr/\csr_reg[836][6] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (CPU_c/csr/\csr_reg[836][10] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (CPU_c/csr/\csr_reg[836][12] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (CPU_c/csr/\csr_reg[836][13] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (CPU_c/csr/\csr_reg[836][14] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (CPU_c/csr/\csr_reg[836][15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (CPU_c/csr/\csr_reg[836][16] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (CPU_c/csr/\csr_reg[836][17] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (CPU_c/csr/\csr_reg[836][18] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (CPU_c/csr/\csr_reg[836][19] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (CPU_c/csr/\csr_reg[836][20] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (CPU_c/csr/\csr_reg[836][21] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (CPU_c/csr/\csr_reg[836][22] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (CPU_c/csr/\csr_reg[836][23] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (CPU_c/csr/\csr_reg[836][24] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (CPU_c/csr/\csr_reg[836][25] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (CPU_c/csr/\csr_reg[836][26] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (CPU_c/csr/\csr_reg[836][27] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (CPU_c/csr/\csr_reg[836][28] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (CPU_c/csr/\csr_reg[836][29] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (CPU_c/csr/\csr_reg[836][30] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (CPU_c/csr/\csr_reg[836][31] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (CPU_c/csr/\csr_reg[836][32] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (CPU_c/csr/\csr_reg[836][33] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (CPU_c/csr/\csr_reg[836][34] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (CPU_c/csr/\csr_reg[836][35] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (CPU_c/csr/\csr_reg[836][36] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (CPU_c/csr/\csr_reg[836][37] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (CPU_c/csr/\csr_reg[836][38] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (CPU_c/csr/\csr_reg[836][39] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (CPU_c/csr/\csr_reg[836][40] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (CPU_c/csr/\csr_reg[836][41] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (CPU_c/csr/\csr_reg[836][42] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (CPU_c/csr/\csr_reg[836][43] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (CPU_c/csr/\csr_reg[836][44] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (CPU_c/csr/\csr_reg[836][45] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (CPU_c/csr/\csr_reg[836][46] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (CPU_c/csr/\csr_reg[836][47] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (CPU_c/csr/\csr_reg[836][48] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (CPU_c/csr/\csr_reg[836][49] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (CPU_c/csr/\csr_reg[836][50] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (CPU_c/csr/\csr_reg[836][51] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (CPU_c/csr/\csr_reg[836][52] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (CPU_c/csr/\csr_reg[836][53] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (CPU_c/csr/\csr_reg[836][54] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (CPU_c/csr/\csr_reg[836][55] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (CPU_c/csr/\csr_reg[836][56] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (CPU_c/csr/\csr_reg[836][57] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (CPU_c/csr/\csr_reg[836][58] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (CPU_c/csr/\csr_reg[836][59] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (CPU_c/csr/\csr_reg[836][60] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (CPU_c/csr/\csr_reg[836][61] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (CPU_c/csr/\csr_reg[836][62] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (CPU_c/csr/\csr_reg[836][63] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (CPU_c/csr/\csr_reg[836][8] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (CPU_c/csr/\csr_reg[836][9] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (CPU_c/csr/\csr_reg[836][11] )
-INFO: [Synth 8-3886] merging instance 'CPU_c/id_ex/imm_reg[31]' (FDRE) to 'CPU_c/id_ex/imm_reg[63]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/id_ex/imm_reg[32]' (FDRE) to 'CPU_c/id_ex/imm_reg[63]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/id_ex/imm_reg[33]' (FDRE) to 'CPU_c/id_ex/imm_reg[63]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/id_ex/imm_reg[34]' (FDRE) to 'CPU_c/id_ex/imm_reg[63]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/id_ex/imm_reg[35]' (FDRE) to 'CPU_c/id_ex/imm_reg[63]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/id_ex/imm_reg[36]' (FDRE) to 'CPU_c/id_ex/imm_reg[63]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/id_ex/imm_reg[37]' (FDRE) to 'CPU_c/id_ex/imm_reg[63]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/id_ex/imm_reg[38]' (FDRE) to 'CPU_c/id_ex/imm_reg[63]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/id_ex/imm_reg[39]' (FDRE) to 'CPU_c/id_ex/imm_reg[63]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/id_ex/imm_reg[40]' (FDRE) to 'CPU_c/id_ex/imm_reg[63]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/id_ex/imm_reg[41]' (FDRE) to 'CPU_c/id_ex/imm_reg[63]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/id_ex/imm_reg[42]' (FDRE) to 'CPU_c/id_ex/imm_reg[63]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/id_ex/imm_reg[43]' (FDRE) to 'CPU_c/id_ex/imm_reg[63]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/id_ex/imm_reg[44]' (FDRE) to 'CPU_c/id_ex/imm_reg[63]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/id_ex/imm_reg[45]' (FDRE) to 'CPU_c/id_ex/imm_reg[63]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/id_ex/imm_reg[46]' (FDRE) to 'CPU_c/id_ex/imm_reg[63]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/id_ex/imm_reg[47]' (FDRE) to 'CPU_c/id_ex/imm_reg[63]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/id_ex/imm_reg[48]' (FDRE) to 'CPU_c/id_ex/imm_reg[63]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/id_ex/imm_reg[49]' (FDRE) to 'CPU_c/id_ex/imm_reg[63]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/id_ex/imm_reg[50]' (FDRE) to 'CPU_c/id_ex/imm_reg[63]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/id_ex/imm_reg[51]' (FDRE) to 'CPU_c/id_ex/imm_reg[63]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/id_ex/imm_reg[52]' (FDRE) to 'CPU_c/id_ex/imm_reg[63]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/id_ex/imm_reg[53]' (FDRE) to 'CPU_c/id_ex/imm_reg[63]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/id_ex/imm_reg[54]' (FDRE) to 'CPU_c/id_ex/imm_reg[63]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/id_ex/imm_reg[55]' (FDRE) to 'CPU_c/id_ex/imm_reg[63]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/id_ex/imm_reg[56]' (FDRE) to 'CPU_c/id_ex/imm_reg[63]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/id_ex/imm_reg[57]' (FDRE) to 'CPU_c/id_ex/imm_reg[63]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/id_ex/imm_reg[58]' (FDRE) to 'CPU_c/id_ex/imm_reg[63]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/id_ex/imm_reg[59]' (FDRE) to 'CPU_c/id_ex/imm_reg[63]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/id_ex/imm_reg[60]' (FDRE) to 'CPU_c/id_ex/imm_reg[63]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/id_ex/imm_reg[61]' (FDRE) to 'CPU_c/id_ex/imm_reg[63]'
-INFO: [Synth 8-3886] merging instance 'CPU_c/id_ex/imm_reg[62]' (FDRE) to 'CPU_c/id_ex/imm_reg[63]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (CPU_c/iomn/\ifWait_reg[1] )
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 16 [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:959]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 16 [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:955]
+DSP Report: Generating DSP _T_89, operation Mode is: A*B.
+DSP Report: operator _T_89 is absorbed into DSP _T_89.
+DSP Report: operator _T_89 is absorbed into DSP _T_89.
+DSP Report: Generating DSP _T_89, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator _T_89 is absorbed into DSP _T_89.
+DSP Report: operator _T_89 is absorbed into DSP _T_89.
+DSP Report: Generating DSP _T_89, operation Mode is: PCIN+A*B.
+DSP Report: operator _T_89 is absorbed into DSP _T_89.
+DSP Report: operator _T_89 is absorbed into DSP _T_89.
+DSP Report: Generating DSP _T_89, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator _T_89 is absorbed into DSP _T_89.
+DSP Report: operator _T_89 is absorbed into DSP _T_89.
+DSP Report: Generating DSP _T_89, operation Mode is: A*B.
+DSP Report: operator _T_89 is absorbed into DSP _T_89.
+DSP Report: operator _T_89 is absorbed into DSP _T_89.
+DSP Report: Generating DSP _T_89, operation Mode is: PCIN+A*B.
+DSP Report: operator _T_89 is absorbed into DSP _T_89.
+DSP Report: operator _T_89 is absorbed into DSP _T_89.
+DSP Report: Generating DSP _T_89, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator _T_89 is absorbed into DSP _T_89.
+DSP Report: operator _T_89 is absorbed into DSP _T_89.
+DSP Report: Generating DSP _T_89, operation Mode is: PCIN+A*B.
+DSP Report: operator _T_89 is absorbed into DSP _T_89.
+DSP Report: operator _T_89 is absorbed into DSP _T_89.
+DSP Report: Generating DSP _T_89, operation Mode is: A*B.
+DSP Report: operator _T_89 is absorbed into DSP _T_89.
+DSP Report: operator _T_89 is absorbed into DSP _T_89.
+DSP Report: Generating DSP _T_89, operation Mode is: PCIN+A*B.
+DSP Report: operator _T_89 is absorbed into DSP _T_89.
+DSP Report: operator _T_89 is absorbed into DSP _T_89.
+DSP Report: Generating DSP _T_89, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator _T_89 is absorbed into DSP _T_89.
+DSP Report: operator _T_89 is absorbed into DSP _T_89.
+DSP Report: Generating DSP _T_89, operation Mode is: PCIN+A*B.
+DSP Report: operator _T_89 is absorbed into DSP _T_89.
+DSP Report: operator _T_89 is absorbed into DSP _T_89.
+DSP Report: Generating DSP _T_89, operation Mode is: A*B.
+DSP Report: operator _T_89 is absorbed into DSP _T_89.
+DSP Report: operator _T_89 is absorbed into DSP _T_89.
+DSP Report: Generating DSP _T_89, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator _T_89 is absorbed into DSP _T_89.
+DSP Report: operator _T_89 is absorbed into DSP _T_89.
+DSP Report: Generating DSP _T_89, operation Mode is: PCIN+A*B.
+DSP Report: operator _T_89 is absorbed into DSP _T_89.
+DSP Report: operator _T_89 is absorbed into DSP _T_89.
+DSP Report: Generating DSP _T_89, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator _T_89 is absorbed into DSP _T_89.
+DSP Report: operator _T_89 is absorbed into DSP _T_89.
+DSP Report: Generating DSP _T_95, operation Mode is: A*B.
+DSP Report: operator _T_95 is absorbed into DSP _T_95.
+DSP Report: operator _T_95 is absorbed into DSP _T_95.
+DSP Report: Generating DSP _T_95, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator _T_95 is absorbed into DSP _T_95.
+DSP Report: operator _T_95 is absorbed into DSP _T_95.
+DSP Report: Generating DSP _T_95, operation Mode is: PCIN+A*B.
+DSP Report: operator _T_95 is absorbed into DSP _T_95.
+DSP Report: operator _T_95 is absorbed into DSP _T_95.
+DSP Report: Generating DSP _T_95, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator _T_95 is absorbed into DSP _T_95.
+DSP Report: operator _T_95 is absorbed into DSP _T_95.
+DSP Report: Generating DSP _T_95, operation Mode is: A*B.
+DSP Report: operator _T_95 is absorbed into DSP _T_95.
+DSP Report: operator _T_95 is absorbed into DSP _T_95.
+DSP Report: Generating DSP _T_95, operation Mode is: PCIN+A*B.
+DSP Report: operator _T_95 is absorbed into DSP _T_95.
+DSP Report: operator _T_95 is absorbed into DSP _T_95.
+DSP Report: Generating DSP _T_95, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator _T_95 is absorbed into DSP _T_95.
+DSP Report: operator _T_95 is absorbed into DSP _T_95.
+DSP Report: Generating DSP _T_95, operation Mode is: PCIN+A*B.
+DSP Report: operator _T_95 is absorbed into DSP _T_95.
+DSP Report: operator _T_95 is absorbed into DSP _T_95.
+DSP Report: Generating DSP _T_95, operation Mode is: A*B.
+DSP Report: operator _T_95 is absorbed into DSP _T_95.
+DSP Report: operator _T_95 is absorbed into DSP _T_95.
+DSP Report: Generating DSP _T_95, operation Mode is: PCIN+A*B.
+DSP Report: operator _T_95 is absorbed into DSP _T_95.
+DSP Report: operator _T_95 is absorbed into DSP _T_95.
+DSP Report: Generating DSP _T_95, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator _T_95 is absorbed into DSP _T_95.
+DSP Report: operator _T_95 is absorbed into DSP _T_95.
+DSP Report: Generating DSP _T_95, operation Mode is: PCIN+A*B.
+DSP Report: operator _T_95 is absorbed into DSP _T_95.
+DSP Report: operator _T_95 is absorbed into DSP _T_95.
+DSP Report: Generating DSP _T_95, operation Mode is: A*B.
+DSP Report: operator _T_95 is absorbed into DSP _T_95.
+DSP Report: operator _T_95 is absorbed into DSP _T_95.
+DSP Report: Generating DSP _T_95, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator _T_95 is absorbed into DSP _T_95.
+DSP Report: operator _T_95 is absorbed into DSP _T_95.
+DSP Report: Generating DSP _T_95, operation Mode is: PCIN+A*B.
+DSP Report: operator _T_95 is absorbed into DSP _T_95.
+DSP Report: operator _T_95 is absorbed into DSP _T_95.
+DSP Report: Generating DSP _T_95, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator _T_95 is absorbed into DSP _T_95.
+DSP Report: operator _T_95 is absorbed into DSP _T_95.
+DSP Report: Generating DSP _T_99, operation Mode is: A*B.
+DSP Report: operator _T_99 is absorbed into DSP _T_99.
+DSP Report: operator _T_99 is absorbed into DSP _T_99.
+DSP Report: Generating DSP _T_99, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator _T_99 is absorbed into DSP _T_99.
+DSP Report: operator _T_99 is absorbed into DSP _T_99.
+DSP Report: Generating DSP _T_99, operation Mode is: PCIN+A*B.
+DSP Report: operator _T_99 is absorbed into DSP _T_99.
+DSP Report: operator _T_99 is absorbed into DSP _T_99.
+DSP Report: Generating DSP _T_99, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator _T_99 is absorbed into DSP _T_99.
+DSP Report: operator _T_99 is absorbed into DSP _T_99.
+DSP Report: Generating DSP _T_99, operation Mode is: A*B.
+DSP Report: operator _T_99 is absorbed into DSP _T_99.
+DSP Report: operator _T_99 is absorbed into DSP _T_99.
+DSP Report: Generating DSP _T_99, operation Mode is: PCIN+A*B.
+DSP Report: operator _T_99 is absorbed into DSP _T_99.
+DSP Report: operator _T_99 is absorbed into DSP _T_99.
+DSP Report: Generating DSP _T_99, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator _T_99 is absorbed into DSP _T_99.
+DSP Report: operator _T_99 is absorbed into DSP _T_99.
+DSP Report: Generating DSP _T_99, operation Mode is: PCIN+A*B.
+DSP Report: operator _T_99 is absorbed into DSP _T_99.
+DSP Report: operator _T_99 is absorbed into DSP _T_99.
+DSP Report: Generating DSP _T_99, operation Mode is: A*B.
+DSP Report: operator _T_99 is absorbed into DSP _T_99.
+DSP Report: operator _T_99 is absorbed into DSP _T_99.
+DSP Report: Generating DSP _T_99, operation Mode is: PCIN+A*B.
+DSP Report: operator _T_99 is absorbed into DSP _T_99.
+DSP Report: operator _T_99 is absorbed into DSP _T_99.
+DSP Report: Generating DSP _T_99, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator _T_99 is absorbed into DSP _T_99.
+DSP Report: operator _T_99 is absorbed into DSP _T_99.
+DSP Report: Generating DSP _T_99, operation Mode is: PCIN+A*B.
+DSP Report: operator _T_99 is absorbed into DSP _T_99.
+DSP Report: operator _T_99 is absorbed into DSP _T_99.
+DSP Report: Generating DSP _T_99, operation Mode is: A*B.
+DSP Report: operator _T_99 is absorbed into DSP _T_99.
+DSP Report: operator _T_99 is absorbed into DSP _T_99.
+DSP Report: Generating DSP _T_99, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator _T_99 is absorbed into DSP _T_99.
+DSP Report: operator _T_99 is absorbed into DSP _T_99.
+DSP Report: Generating DSP _T_99, operation Mode is: PCIN+A*B.
+DSP Report: operator _T_99 is absorbed into DSP _T_99.
+DSP Report: operator _T_99 is absorbed into DSP _T_99.
+DSP Report: Generating DSP _T_99, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator _T_99 is absorbed into DSP _T_99.
+DSP Report: operator _T_99 is absorbed into DSP _T_99.
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.srcs/sources_1/new/CPU.v:898]
+DSP Report: Generating DSP _T_26, operation Mode is: A*B.
+DSP Report: operator _T_26 is absorbed into DSP _T_26.
+DSP Report: operator _T_26 is absorbed into DSP _T_26.
+DSP Report: Generating DSP _T_26, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator _T_26 is absorbed into DSP _T_26.
+DSP Report: operator _T_26 is absorbed into DSP _T_26.
+DSP Report: Generating DSP _T_26, operation Mode is: A*B.
+DSP Report: operator _T_26 is absorbed into DSP _T_26.
+DSP Report: operator _T_26 is absorbed into DSP _T_26.
+DSP Report: Generating DSP _T_26, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator _T_26 is absorbed into DSP _T_26.
+DSP Report: operator _T_26 is absorbed into DSP _T_26.
+INFO: [Synth 8-5544] ROM "inter_new_mode" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-3886] merging instance 'if_id/excep_code_reg[0]' (FDRE) to 'if_id/excep_code_reg[1]'
+INFO: [Synth 8-3886] merging instance 'if_id/excep_code_reg[1]' (FDRE) to 'if_id/excep_code_reg[2]'
+INFO: [Synth 8-3886] merging instance 'if_id/excep_code_reg[2]' (FDRE) to 'if_id/excep_code_reg[3]'
+INFO: [Synth 8-3886] merging instance 'if_id/excep_code_reg[3]' (FDRE) to 'if_id/excep_code_reg[4]'
+INFO: [Synth 8-3886] merging instance 'if_id/excep_code_reg[4]' (FDRE) to 'if_id/excep_code_reg[5]'
+INFO: [Synth 8-3886] merging instance 'if_id/excep_code_reg[5]' (FDRE) to 'if_id/excep_code_reg[6]'
+INFO: [Synth 8-3886] merging instance 'if_id/excep_code_reg[6]' (FDRE) to 'if_id/excep_code_reg[7]'
+INFO: [Synth 8-3886] merging instance 'if_id/excep_code_reg[7]' (FDRE) to 'if_id/excep_code_reg[8]'
+INFO: [Synth 8-3886] merging instance 'if_id/excep_code_reg[8]' (FDRE) to 'if_id/excep_code_reg[9]'
+INFO: [Synth 8-3886] merging instance 'if_id/excep_code_reg[9]' (FDRE) to 'if_id/excep_code_reg[10]'
+INFO: [Synth 8-3886] merging instance 'if_id/excep_code_reg[10]' (FDRE) to 'if_id/excep_code_reg[11]'
+INFO: [Synth 8-3886] merging instance 'if_id/excep_code_reg[11]' (FDRE) to 'if_id/excep_code_reg[12]'
+INFO: [Synth 8-3886] merging instance 'if_id/excep_code_reg[12]' (FDRE) to 'if_id/excep_code_reg[13]'
+INFO: [Synth 8-3886] merging instance 'if_id/excep_code_reg[13]' (FDRE) to 'if_id/excep_code_reg[14]'
+INFO: [Synth 8-3886] merging instance 'if_id/excep_code_reg[14]' (FDRE) to 'if_id/excep_code_reg[15]'
+INFO: [Synth 8-3886] merging instance 'if_id/excep_code_reg[15]' (FDRE) to 'if_id/excep_code_reg[16]'
+INFO: [Synth 8-3886] merging instance 'if_id/excep_code_reg[16]' (FDRE) to 'if_id/excep_code_reg[17]'
+INFO: [Synth 8-3886] merging instance 'if_id/excep_code_reg[17]' (FDRE) to 'if_id/excep_code_reg[18]'
+INFO: [Synth 8-3886] merging instance 'if_id/excep_code_reg[18]' (FDRE) to 'if_id/excep_code_reg[19]'
+INFO: [Synth 8-3886] merging instance 'if_id/excep_code_reg[19]' (FDRE) to 'if_id/excep_code_reg[20]'
+INFO: [Synth 8-3886] merging instance 'if_id/excep_code_reg[20]' (FDRE) to 'if_id/excep_code_reg[21]'
+INFO: [Synth 8-3886] merging instance 'if_id/excep_code_reg[21]' (FDRE) to 'if_id/excep_code_reg[22]'
+INFO: [Synth 8-3886] merging instance 'if_id/excep_code_reg[22]' (FDRE) to 'if_id/excep_code_reg[23]'
+INFO: [Synth 8-3886] merging instance 'if_id/excep_code_reg[23]' (FDRE) to 'if_id/excep_code_reg[24]'
+INFO: [Synth 8-3886] merging instance 'if_id/excep_code_reg[24]' (FDRE) to 'if_id/excep_code_reg[25]'
+INFO: [Synth 8-3886] merging instance 'if_id/excep_code_reg[25]' (FDRE) to 'if_id/excep_code_reg[26]'
+INFO: [Synth 8-3886] merging instance 'if_id/excep_code_reg[26]' (FDRE) to 'if_id/excep_code_reg[27]'
+INFO: [Synth 8-3886] merging instance 'if_id/excep_code_reg[27]' (FDRE) to 'if_id/excep_code_reg[28]'
+INFO: [Synth 8-3886] merging instance 'if_id/excep_code_reg[28]' (FDRE) to 'if_id/excep_code_reg[29]'
+INFO: [Synth 8-3886] merging instance 'if_id/excep_code_reg[29]' (FDRE) to 'if_id/excep_code_reg[30]'
+INFO: [Synth 8-3886] merging instance 'if_id/excep_code_reg[30]' (FDRE) to 'if_id/excep_code_reg[31]'
+INFO: [Synth 8-3886] merging instance 'if_id/excep_code_reg[31]' (FDRE) to 'if_id/excep_code_reg[32]'
+INFO: [Synth 8-3886] merging instance 'if_id/excep_code_reg[32]' (FDRE) to 'if_id/excep_code_reg[33]'
+INFO: [Synth 8-3886] merging instance 'if_id/excep_code_reg[33]' (FDRE) to 'if_id/excep_code_reg[34]'
+INFO: [Synth 8-3886] merging instance 'if_id/excep_code_reg[34]' (FDRE) to 'if_id/excep_code_reg[35]'
+INFO: [Synth 8-3886] merging instance 'if_id/excep_code_reg[35]' (FDRE) to 'if_id/excep_code_reg[36]'
+INFO: [Synth 8-3886] merging instance 'if_id/excep_code_reg[36]' (FDRE) to 'if_id/excep_code_reg[37]'
+INFO: [Synth 8-3886] merging instance 'if_id/excep_code_reg[37]' (FDRE) to 'if_id/excep_code_reg[38]'
+INFO: [Synth 8-3886] merging instance 'if_id/excep_code_reg[38]' (FDRE) to 'if_id/excep_code_reg[39]'
+INFO: [Synth 8-3886] merging instance 'if_id/excep_code_reg[39]' (FDRE) to 'if_id/excep_code_reg[40]'
+INFO: [Synth 8-3886] merging instance 'if_id/excep_code_reg[40]' (FDRE) to 'if_id/excep_code_reg[41]'
+INFO: [Synth 8-3886] merging instance 'if_id/excep_code_reg[41]' (FDRE) to 'if_id/excep_code_reg[42]'
+INFO: [Synth 8-3886] merging instance 'if_id/excep_code_reg[42]' (FDRE) to 'if_id/excep_code_reg[43]'
+INFO: [Synth 8-3886] merging instance 'if_id/excep_code_reg[43]' (FDRE) to 'if_id/excep_code_reg[44]'
+INFO: [Synth 8-3886] merging instance 'if_id/excep_code_reg[44]' (FDRE) to 'if_id/excep_code_reg[45]'
+INFO: [Synth 8-3886] merging instance 'if_id/excep_code_reg[45]' (FDRE) to 'if_id/excep_code_reg[46]'
+INFO: [Synth 8-3886] merging instance 'if_id/excep_code_reg[46]' (FDRE) to 'if_id/excep_code_reg[47]'
+INFO: [Synth 8-3886] merging instance 'if_id/excep_code_reg[47]' (FDRE) to 'if_id/excep_code_reg[48]'
+INFO: [Synth 8-3886] merging instance 'if_id/excep_code_reg[48]' (FDRE) to 'if_id/excep_code_reg[49]'
+INFO: [Synth 8-3886] merging instance 'if_id/excep_code_reg[49]' (FDRE) to 'if_id/excep_code_reg[50]'
+INFO: [Synth 8-3886] merging instance 'if_id/excep_code_reg[50]' (FDRE) to 'if_id/excep_code_reg[51]'
+INFO: [Synth 8-3886] merging instance 'if_id/excep_code_reg[51]' (FDRE) to 'if_id/excep_code_reg[52]'
+INFO: [Synth 8-3886] merging instance 'if_id/excep_code_reg[52]' (FDRE) to 'if_id/excep_code_reg[53]'
+INFO: [Synth 8-3886] merging instance 'if_id/excep_code_reg[53]' (FDRE) to 'if_id/excep_code_reg[54]'
+INFO: [Synth 8-3886] merging instance 'if_id/excep_code_reg[54]' (FDRE) to 'if_id/excep_code_reg[55]'
+INFO: [Synth 8-3886] merging instance 'if_id/excep_code_reg[55]' (FDRE) to 'if_id/excep_code_reg[56]'
+INFO: [Synth 8-3886] merging instance 'if_id/excep_code_reg[56]' (FDRE) to 'if_id/excep_code_reg[57]'
+INFO: [Synth 8-3886] merging instance 'if_id/excep_code_reg[57]' (FDRE) to 'if_id/excep_code_reg[58]'
+INFO: [Synth 8-3886] merging instance 'if_id/excep_code_reg[58]' (FDRE) to 'if_id/excep_code_reg[59]'
+INFO: [Synth 8-3886] merging instance 'if_id/excep_code_reg[59]' (FDRE) to 'if_id/excep_code_reg[60]'
+INFO: [Synth 8-3886] merging instance 'if_id/excep_code_reg[60]' (FDRE) to 'if_id/excep_code_reg[61]'
+INFO: [Synth 8-3886] merging instance 'if_id/excep_code_reg[61]' (FDRE) to 'if_id/excep_code_reg[62]'
+INFO: [Synth 8-3886] merging instance 'if_id/excep_code_reg[62]' (FDRE) to 'if_id/excep_code_reg[63]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\if_id/excep_code_reg[63] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\if_id/excep_valid_reg )
+INFO: [Synth 8-3886] merging instance 'mmu/if_addr_reg[0]' (FDRE) to 'mmu/if_addr_reg[1]'
+INFO: [Synth 8-3886] merging instance 'mmu/if_addr_reg[1]' (FDRE) to 'mmu/if_addr_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mmu/\if_addr_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (csr/\csr_reg[836][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (csr/\csr_reg[836][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (csr/\csr_reg[836][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (csr/\csr_reg[836][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (csr/\csr_reg[836][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (csr/\csr_reg[836][12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (csr/\csr_reg[836][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (csr/\csr_reg[836][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (csr/\csr_reg[836][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (csr/\csr_reg[836][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (csr/\csr_reg[836][17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (csr/\csr_reg[836][18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (csr/\csr_reg[836][19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (csr/\csr_reg[836][20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (csr/\csr_reg[836][21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (csr/\csr_reg[836][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (csr/\csr_reg[836][23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (csr/\csr_reg[836][24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (csr/\csr_reg[836][25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (csr/\csr_reg[836][26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (csr/\csr_reg[836][27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (csr/\csr_reg[836][28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (csr/\csr_reg[836][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (csr/\csr_reg[836][30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (csr/\csr_reg[836][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (csr/\csr_reg[836][32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (csr/\csr_reg[836][33] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (csr/\csr_reg[836][34] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (csr/\csr_reg[836][35] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (csr/\csr_reg[836][36] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (csr/\csr_reg[836][37] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (csr/\csr_reg[836][38] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (csr/\csr_reg[836][39] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (csr/\csr_reg[836][40] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (csr/\csr_reg[836][41] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (csr/\csr_reg[836][42] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (csr/\csr_reg[836][43] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (csr/\csr_reg[836][44] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (csr/\csr_reg[836][45] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (csr/\csr_reg[836][46] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (csr/\csr_reg[836][47] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (csr/\csr_reg[836][48] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (csr/\csr_reg[836][49] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (csr/\csr_reg[836][50] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (csr/\csr_reg[836][51] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (csr/\csr_reg[836][52] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (csr/\csr_reg[836][53] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (csr/\csr_reg[836][54] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (csr/\csr_reg[836][55] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (csr/\csr_reg[836][56] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (csr/\csr_reg[836][57] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (csr/\csr_reg[836][58] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (csr/\csr_reg[836][59] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (csr/\csr_reg[836][60] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (csr/\csr_reg[836][61] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (csr/\csr_reg[836][62] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (csr/\csr_reg[836][63] )
+INFO: [Synth 8-3886] merging instance 'id_ex/imm_reg[31]' (FDRE) to 'id_ex/imm_reg[32]'
+INFO: [Synth 8-3886] merging instance 'id_ex/imm_reg[32]' (FDRE) to 'id_ex/imm_reg[33]'
+INFO: [Synth 8-3886] merging instance 'id_ex/imm_reg[33]' (FDRE) to 'id_ex/imm_reg[34]'
+INFO: [Synth 8-3886] merging instance 'id_ex/imm_reg[34]' (FDRE) to 'id_ex/imm_reg[35]'
+INFO: [Synth 8-3886] merging instance 'id_ex/imm_reg[35]' (FDRE) to 'id_ex/imm_reg[36]'
+INFO: [Synth 8-3886] merging instance 'id_ex/imm_reg[36]' (FDRE) to 'id_ex/imm_reg[37]'
+INFO: [Synth 8-3886] merging instance 'id_ex/imm_reg[37]' (FDRE) to 'id_ex/imm_reg[38]'
+INFO: [Synth 8-3886] merging instance 'id_ex/imm_reg[38]' (FDRE) to 'id_ex/imm_reg[39]'
+INFO: [Synth 8-3886] merging instance 'id_ex/imm_reg[39]' (FDRE) to 'id_ex/imm_reg[40]'
+INFO: [Synth 8-3886] merging instance 'id_ex/imm_reg[40]' (FDRE) to 'id_ex/imm_reg[41]'
+INFO: [Synth 8-3886] merging instance 'id_ex/imm_reg[41]' (FDRE) to 'id_ex/imm_reg[42]'
+INFO: [Synth 8-3886] merging instance 'id_ex/imm_reg[42]' (FDRE) to 'id_ex/imm_reg[43]'
+INFO: [Synth 8-3886] merging instance 'id_ex/imm_reg[43]' (FDRE) to 'id_ex/imm_reg[44]'
+INFO: [Synth 8-3886] merging instance 'id_ex/imm_reg[44]' (FDRE) to 'id_ex/imm_reg[45]'
+INFO: [Synth 8-3886] merging instance 'id_ex/imm_reg[45]' (FDRE) to 'id_ex/imm_reg[46]'
+INFO: [Synth 8-3886] merging instance 'id_ex/imm_reg[46]' (FDRE) to 'id_ex/imm_reg[47]'
+INFO: [Synth 8-3886] merging instance 'id_ex/imm_reg[47]' (FDRE) to 'id_ex/imm_reg[48]'
+INFO: [Synth 8-3886] merging instance 'id_ex/imm_reg[48]' (FDRE) to 'id_ex/imm_reg[49]'
+INFO: [Synth 8-3886] merging instance 'id_ex/imm_reg[49]' (FDRE) to 'id_ex/imm_reg[50]'
+INFO: [Synth 8-3886] merging instance 'id_ex/imm_reg[50]' (FDRE) to 'id_ex/imm_reg[51]'
+INFO: [Synth 8-3886] merging instance 'id_ex/imm_reg[51]' (FDRE) to 'id_ex/imm_reg[52]'
+INFO: [Synth 8-3886] merging instance 'id_ex/imm_reg[52]' (FDRE) to 'id_ex/imm_reg[53]'
+INFO: [Synth 8-3886] merging instance 'id_ex/imm_reg[53]' (FDRE) to 'id_ex/imm_reg[54]'
+INFO: [Synth 8-3886] merging instance 'id_ex/imm_reg[54]' (FDRE) to 'id_ex/imm_reg[55]'
+INFO: [Synth 8-3886] merging instance 'id_ex/imm_reg[55]' (FDRE) to 'id_ex/imm_reg[56]'
+INFO: [Synth 8-3886] merging instance 'id_ex/imm_reg[56]' (FDRE) to 'id_ex/imm_reg[57]'
+INFO: [Synth 8-3886] merging instance 'id_ex/imm_reg[57]' (FDRE) to 'id_ex/imm_reg[58]'
+INFO: [Synth 8-3886] merging instance 'id_ex/imm_reg[58]' (FDRE) to 'id_ex/imm_reg[59]'
+INFO: [Synth 8-3886] merging instance 'id_ex/imm_reg[59]' (FDRE) to 'id_ex/imm_reg[60]'
+INFO: [Synth 8-3886] merging instance 'id_ex/imm_reg[60]' (FDRE) to 'id_ex/imm_reg[61]'
+INFO: [Synth 8-3886] merging instance 'id_ex/imm_reg[61]' (FDRE) to 'id_ex/imm_reg[62]'
+INFO: [Synth 8-3886] merging instance 'id_ex/imm_reg[62]' (FDRE) to 'id_ex/imm_reg[63]'
+INFO: [Synth 8-3886] merging instance 'ex_mem/inter_bits_reg[62]' (FDRE) to 'ex_mem/inter_bits_reg[4]'
+INFO: [Synth 8-3886] merging instance 'ex_mem/inter_bits_reg[4]' (FDRE) to 'ex_mem/inter_bits_reg[5]'
+INFO: [Synth 8-3886] merging instance 'ex_mem/inter_bits_reg[61]' (FDRE) to 'ex_mem/inter_bits_reg[5]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ex_mem/inter_bits_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (iomn/\ifWait_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (mmu/\if_mode_reg[0] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:24 ; elapsed = 00:02:30 . Memory (MB): peak = 1066.824 ; gain = 786.230
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:53 ; elapsed = 00:03:27 . Memory (MB): peak = 1079.801 ; gain = 799.375
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 Distributed RAM: Preliminary Mapping  Report (see note below)
-+------------+------------+-----------+----------------------+---------------+
-|Module Name | RTL Object | Inference | Size (Depth x Width) | Primitives    | 
-+------------+------------+-----------+----------------------+---------------+
-|CPU_c/regc  | regs_reg   | Implied   | 32 x 64              | RAM32M x 22   | 
-+------------+------------+-----------+----------------------+---------------+
++------------+---------------+-----------+----------------------+---------------+
+|Module Name | RTL Object    | Inference | Size (Depth x Width) | Primitives    | 
++------------+---------------+-----------+----------------------+---------------+
+|CPU__GC0    | regc/regs_reg | Implied   | 32 x 64              | RAM32M x 22   | 
++------------+---------------+-----------+----------------------+---------------+
 
 Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|ALU         | A*B            | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | (PCIN>>17)+A*B | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | PCIN+A*B       | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | (PCIN>>17)+A*B | 13     | 13     | -      | -      | 26     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | PCIN+A*B       | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | (PCIN>>17)+A*B | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | (PCIN>>17)+A*B | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | (PCIN>>17)+A*B | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | (PCIN>>17)+A*B | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU__GB1    | A*B            | 18     | 14     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU__GB1    | (PCIN>>17)+A*B | 18     | 14     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU__GB1    | PCIN+A*B       | 18     | 14     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU__GB1    | (PCIN>>17)+A*B | 14     | 14     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU__GB1    | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU__GB1    | PCIN+A*B       | 18     | 14     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU__GB1    | (PCIN>>17)+A*B | 18     | 14     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU__GB1    | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU__GB1    | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU__GB1    | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU__GB1    | (PCIN>>17)+A*B | 18     | 14     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU__GB1    | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU__GB1    | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU__GB1    | (PCIN>>17)+A*B | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU__GB1    | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU__GB1    | (PCIN>>17)+A*B | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU__GB1    | A*B            | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU__GB1    | (PCIN>>17)+A*B | 18     | 14     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU__GB1    | PCIN+A*B       | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU__GB1    | (PCIN>>17)+A*B | 14     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU__GB1    | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU__GB1    | PCIN+A*B       | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU__GB1    | (PCIN>>17)+A*B | 18     | 14     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU__GB1    | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU__GB1    | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU__GB1    | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU__GB1    | (PCIN>>17)+A*B | 18     | 14     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU__GB1    | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU__GB1    | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU__GB1    | (PCIN>>17)+A*B | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU__GB1    | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU__GB1    | (PCIN>>17)+A*B | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU__GB5    | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU__GB5    | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU__GB5    | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU__GB5    | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
 ---------------------------------------------------------------------------------
 Finished ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
++------+---------------------+------------+----------+
+|      |RTL Partition        |Replication |Instances |
++------+---------------------+------------+----------+
+|1     |datapath__47_ALU__GD |           1|      9280|
+|2     |ALU__GB1             |           1|      7203|
+|3     |ALU__GB2             |           1|     10679|
+|4     |datapath__51_ALU__GD |           1|      9885|
+|5     |ALU__GB4             |           1|     10105|
+|6     |ALU__GB5             |           1|     12681|
+|7     |Execute__GC0         |           1|      1156|
+|8     |CPU__GC0             |           1|     18394|
+|9     |thinpad_top__GC0     |           1|      2185|
++------+---------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
@@ -956,46 +1313,56 @@ INFO: [Synth 8-5578] Moved timing constraint from pin 'clock_gen/clk_out2' to pi
 WARNING: [Synth 8-565] redefining clock 'clk_50M'
 INFO: [Synth 8-5819] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:34 ; elapsed = 00:02:40 . Memory (MB): peak = 1066.824 ; gain = 786.230
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:11 ; elapsed = 00:03:56 . Memory (MB): peak = 1079.801 ; gain = 799.375
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (CPU_ci_8/\ex_mem/excep_code_reg[63] )
+info: optimization accepted worst group hill climbing move (33211.0/oG. 88.0ps)
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:02:40 ; elapsed = 00:02:47 . Memory (MB): peak = 1066.824 ; gain = 786.230
+Finished Timing Optimization : Time (s): cpu = 00:05:14 ; elapsed = 00:06:17 . Memory (MB): peak = 1497.320 ; gain = 1216.895
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 Distributed RAM: Final Mapping  Report
-+------------+------------+-----------+----------------------+---------------+
-|Module Name | RTL Object | Inference | Size (Depth x Width) | Primitives    | 
-+------------+------------+-----------+----------------------+---------------+
-|CPU_c/regc  | regs_reg   | Implied   | 32 x 64              | RAM32M x 22   | 
-+------------+------------+-----------+----------------------+---------------+
++------------+---------------+-----------+----------------------+---------------+
+|Module Name | RTL Object    | Inference | Size (Depth x Width) | Primitives    | 
++------------+---------------+-----------+----------------------+---------------+
+|CPU__GC0    | regc/regs_reg | Implied   | 32 x 64              | RAM32M x 22   | 
++------------+---------------+-----------+----------------------+---------------+
 
 ---------------------------------------------------------------------------------
 Finished ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
++------+-----------------+------------+----------+
+|      |RTL Partition    |Replication |Instances |
++------+-----------------+------------+----------+
+|1     |ALU__GB2         |           1|       310|
+|2     |ALU__GB5         |           1|      1508|
+|3     |thinpad_top__GC0 |           1|      2185|
+|4     |thinpad_top_GT0  |           1|     23788|
++------+-----------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:02:47 ; elapsed = 00:02:53 . Memory (MB): peak = 1066.824 ; gain = 786.230
+Finished Technology Mapping : Time (s): cpu = 00:05:17 ; elapsed = 00:07:53 . Memory (MB): peak = 1497.320 ; gain = 1216.895
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
++------+-----------------+------------+----------+
+|      |RTL Partition    |Replication |Instances |
++------+-----------------+------------+----------+
+|1     |ALU__GB2         |           1|       144|
+|2     |ALU__GB5         |           1|       443|
+|3     |thinpad_top__GC0 |           1|      1029|
+|4     |thinpad_top_GT0  |           1|     11024|
++------+-----------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start IO Insertion
 ---------------------------------------------------------------------------------
@@ -1012,7 +1379,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:02:48 ; elapsed = 00:02:55 . Memory (MB): peak = 1066.824 ; gain = 786.230
+Finished IO Insertion : Time (s): cpu = 00:05:22 ; elapsed = 00:08:11 . Memory (MB): peak = 1497.320 ; gain = 1216.895
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1025,7 +1392,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:02:49 ; elapsed = 00:02:55 . Memory (MB): peak = 1066.824 ; gain = 786.230
+Finished Renaming Generated Instances : Time (s): cpu = 00:05:22 ; elapsed = 00:08:12 . Memory (MB): peak = 1497.320 ; gain = 1216.895
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1037,25 +1404,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:49 ; elapsed = 00:02:56 . Memory (MB): peak = 1066.824 ; gain = 786.230
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:05:26 ; elapsed = 00:08:16 . Memory (MB): peak = 1497.320 ; gain = 1216.895
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:02:49 ; elapsed = 00:02:56 . Memory (MB): peak = 1066.824 ; gain = 786.230
+Finished Renaming Generated Ports : Time (s): cpu = 00:05:26 ; elapsed = 00:08:16 . Memory (MB): peak = 1497.320 ; gain = 1216.895
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:02:50 ; elapsed = 00:02:56 . Memory (MB): peak = 1066.824 ; gain = 786.230
+Finished Handling Custom Attributes : Time (s): cpu = 00:05:26 ; elapsed = 00:08:17 . Memory (MB): peak = 1497.320 ; gain = 1216.895
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:02:50 ; elapsed = 00:02:56 . Memory (MB): peak = 1066.824 ; gain = 786.230
+Finished Renaming Generated Nets : Time (s): cpu = 00:05:26 ; elapsed = 00:08:17 . Memory (MB): peak = 1497.320 ; gain = 1216.895
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1073,76 +1440,84 @@ Report Cell Usage:
 |      |Cell        |Count |
 +------+------------+------+
 |1     |pll_example |     1|
-|2     |BUFG        |     1|
-|3     |CARRY4      |   261|
-|4     |LUT1        |    83|
-|5     |LUT2        |   695|
-|6     |LUT3        |   554|
-|7     |LUT4        |   418|
-|8     |LUT5        |  1270|
-|9     |LUT6        |  2366|
-|10    |MUXF7       |   355|
-|11    |MUXF8       |     1|
+|2     |CARRY4      |   367|
+|3     |DSP48E1     |    19|
+|4     |LUT1        |   100|
+|5     |LUT2        |  1041|
+|6     |LUT3        |   957|
+|7     |LUT4        |   850|
+|8     |LUT5        |  1149|
+|9     |LUT6        |  3527|
+|10    |MUXF7       |   380|
+|11    |MUXF8       |    20|
 |12    |RAM32M      |    22|
 |13    |FDCE        |     8|
-|14    |FDRE        |  3699|
-|15    |FDSE        |    84|
-|16    |IBUF        |    11|
-|17    |IOBUF       |    64|
-|18    |OBUF        |    87|
-|19    |OBUFT       |    54|
+|14    |FDPE        |     1|
+|15    |FDRE        |  4087|
+|16    |FDSE        |   120|
+|17    |IBUF        |    10|
+|18    |IOBUF       |    64|
+|19    |OBUF        |    87|
+|20    |OBUFT       |    54|
 +------+------------+------+
 
 Report Instance Areas: 
 +------+---------------+----------------------------+------+
 |      |Instance       |Module                      |Cells |
 +------+---------------+----------------------------+------+
-|1     |top            |                            | 10036|
-|2     |  CPU_c        |CPU                         |  9255|
-|3     |    exec       |Execute                     |    38|
-|4     |      bra      |Branch                      |    38|
-|5     |        bctrl  |BranchCtrl                  |    22|
-|6     |    csr        |CSR                         |  3609|
-|7     |    ex_mem     |EX_MEM                      |  1248|
-|8     |    id_ex      |ID_EX                       |  2600|
-|9     |    if_id      |IF_ID                       |  1342|
-|10    |    iomn       |IOManager                   |   105|
-|11    |    mem_wb     |MEM_WB                      |   203|
-|12    |    mmu        |MMU                         |    88|
-|13    |    regc       |RegCtrl                     |    22|
-|14    |  ram0         |ram                         |   354|
-|15    |  segH         |SEG7_LUT                    |     7|
-|16    |  segL         |SEG7_LUT_0                  |     7|
-|17    |  serial0      |serial                      |   162|
-|18    |    ext_uart_r |async_receiver              |    77|
-|19    |      tickgen  |BaudTickGen                 |    41|
-|20    |    ext_uart_t |async_transmitter           |    67|
-|21    |      tickgen  |BaudTickGen__parameterized0 |    37|
+|1     |top            |                            | 12866|
+|2     |  CPU_c        |CPU                         | 11987|
+|3     |    csr        |CSR                         |  3929|
+|4     |    ex_mem     |EX_MEM                      |  1666|
+|5     |    exec       |Execute                     |   305|
+|6     |      alu      |ALU                         |   267|
+|7     |      bra      |Branch                      |    38|
+|8     |        bctrl  |BranchCtrl                  |    22|
+|9     |    id_ex      |ID_EX                       |  2882|
+|10    |    if_id      |IF_ID                       |  1365|
+|11    |    insd       |Decoder                     |     2|
+|12    |    insr       |InsReader                   |   120|
+|13    |    iomn       |IOManager                   |   201|
+|14    |    mem_wb     |MEM_WB                      |    76|
+|15    |    memc       |MemoryCtrl                  |    12|
+|16    |    mmu        |MMU                         |  1395|
+|17    |      ptw_if   |PTW                         |   359|
+|18    |      ptw_mem  |PTW_1                       |   528|
+|19    |    regc       |RegCtrl                     |    22|
+|20    |  ram0         |ram                         |   404|
+|21    |  segH         |SEG7_LUT                    |     7|
+|22    |  segL         |SEG7_LUT_0                  |     7|
+|23    |  serial0      |serial                      |   231|
+|24    |    ext_uart_r |async_receiver              |    91|
+|25    |      tickgen  |BaudTickGen                 |    45|
+|26    |    ext_uart_t |async_transmitter           |    82|
+|27    |      tickgen  |BaudTickGen__parameterized0 |    40|
 +------+---------------+----------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:02:50 ; elapsed = 00:02:56 . Memory (MB): peak = 1066.824 ; gain = 786.230
+Finished Writing Synthesis Report : Time (s): cpu = 00:05:26 ; elapsed = 00:08:17 . Memory (MB): peak = 1497.320 ; gain = 1216.895
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 125 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:02:09 ; elapsed = 00:02:35 . Memory (MB): peak = 1066.824 ; gain = 371.895
-Synthesis Optimization Complete : Time (s): cpu = 00:02:50 ; elapsed = 00:02:56 . Memory (MB): peak = 1066.824 ; gain = 786.230
+Synthesis finished with 0 errors, 0 critical warnings and 211 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:04:40 ; elapsed = 00:11:45 . Memory (MB): peak = 1497.320 ; gain = 786.746
+Synthesis Optimization Complete : Time (s): cpu = 00:05:26 ; elapsed = 00:12:14 . Memory (MB): peak = 1497.320 ; gain = 1216.895
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 703 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 872 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1066.824 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1497.320 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 86 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 64 instances
   RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 22 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-336 Infos, 139 Warnings, 0 Critical Warnings and 0 Errors encountered.
+368 Infos, 135 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:02:55 ; elapsed = 00:03:02 . Memory (MB): peak = 1066.824 ; gain = 786.230
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1066.824 ; gain = 0.000
+synth_design: Time (s): cpu = 00:05:34 ; elapsed = 00:13:20 . Memory (MB): peak = 1497.320 ; gain = 1216.895
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1497.320 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'E:/Xilinx_pro/riscv/thinpad_top/thinpad_top.runs/synth_1/thinpad_top.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1497.320 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_utilization -file thinpad_top_utilization_synth.rpt -pb thinpad_top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Jul 29 03:18:08 2019...
+INFO: [Common 17-206] Exiting Vivado at Mon Aug 19 00:19:32 2019...

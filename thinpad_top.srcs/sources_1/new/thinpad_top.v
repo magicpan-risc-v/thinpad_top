@@ -102,20 +102,38 @@ always@(posedge clk_10M or negedge locked) begin
 	else        reset_of_clk10M <= 1'b0;
 end
 
+reg reset_of_clk20M;
+always@(posedge clk_20M or negedge locked) begin
+	if(~locked) reset_of_clk20M <= 1'b1;
+	else        reset_of_clk20M <= 1'b0;
+end
+
 wire clock;
 wire reset;
 //assign clock=clk_50M;
 //assign reset=reset_btn;
 //assign clock=clk_10M;
 //assign reset=reset_of_clk10M;
-assign clock = clock_btn;
-assign reset = reset_btn;
+assign clock=clk_20M;
+assign reset=reset_of_clk20M;
+//assign clock = clock_btn;
+//assign reset = reset_btn;
 
 wire CPUclk;
 assign CPUclk=clock;
 
 wire [63:0] debug_pc;
 wire [31:0] debug_ins;
+wire [1:0] debug_if_wait;
+wire [1:0] debug_mem_wait;
+wire debug_if_ready;
+wire debug_mem_ready;
+wire [3:0] debug_if_mode;
+wire [3:0] debug_mem_mode;
+wire [63:0] debug_if_addr;
+wire [63:0] debug_mem_addr;
+wire debug_if_error;
+wire debug_mem_error;
 
 wire [ 3:0] mem_mode;
 wire mem_ready;
@@ -134,6 +152,16 @@ CPU CPU_c(
     .io_en(1),
     .io_debug_pc(debug_pc),
     .io_debug_ins(debug_ins),
+    .io_debug_if_wait(debug_if_wait),
+    .io_debug_mem_wait(debug_mem_wait),
+    .io_debug_if_ready(debug_if_ready),
+    .io_debug_mem_ready(debug_mem_ready),
+    .io_debug_if_mode(debug_if_mode),
+    .io_debug_mem_mode(debug_mem_mode),
+    .io_debug_if_addr(debug_if_addr),
+    .io_debug_mem_addr(debug_mem_addr),
+    .io_debug_if_error(debug_if_error),
+    .io_debug_mem_error(debug_mem_error),
     .io_mem_mode(mem_mode),
     .io_mem_ready(mem_ready),
     .io_mem_addr(mem_addr),
@@ -166,6 +194,73 @@ SEG7_LUT segH(.oSEG1(dpy1), .iDIG(number[7:4])); //dpy1是高位数码管
 //assign leds = led_bits;
 
 wire [7:0] sw = dip_sw[7:0];
+            
+
+always@ (posedge clock or posedge reset) begin
+    if (reset) begin
+        number <= 0;
+    end else begin
+        number <= debug_pc[7:0];
+    end
+end
+
+wire [15:0] serial_debug_out;
+
+serial #(.ClkFrequency(20000000)) serial0(
+	.clk(clock),
+	.addr(serial_addr),
+	.ready(serial_ready),
+	.rdata(serial_rdata),
+	.wdata(serial_wdata),
+	.mode(serial_mode),
+	
+	.debug_out(serial_debug_out),
+
+	.rxd(rxd),
+	.txd(txd)
+);
+
+//图像输出演示，分辨率800x600@75Hz，像素时钟为50MHz
+//wire [11:0] hdata;
+//assign video_red = hdata < 266 ? 3'b111 : 0; //红色竖条
+//assign video_green = hdata < 532 && hdata >= 266 ? 3'b111 : 0; //绿色竖条
+//assign video_blue = hdata >= 532 ? 2'b11 : 0; //蓝色竖条
+//assign video_clk = clk_50M;
+//vga #(12, 800, 856, 976, 1040, 600, 637, 643, 666, 1, 1) vga800x600at75 (
+    //.clk(clk_50M), 
+    //.hdata(hdata), //横坐�?
+    //.vdata(),      //纵坐�?
+    //.hsync(video_hsync),
+    //.vsync(video_vsync),
+    //.data_enable(video_de)
+//);
+
+ram ram0(
+	//与Chisel之间的接�?
+	.clk(clock),
+	.addr(mem_addr),			// 访存地址，低22位有�?
+	.ready(mem_ready),
+	.rdata(mem_rdata),		// 读出的数�?
+	.wdata(mem_wdata),		// 写入的数�?
+	.mode(mem_mode),			// 访存模式
+
+	//BaseRAM信号
+	.base_ram_data(base_ram_data),  //BaseRAM数据，低8位与CPLD串口控制器共�?
+	.base_ram_addr(base_ram_addr), //BaseRAM地址
+	.base_ram_be_n(base_ram_be_n),  //BaseRAM字节使能，低有效。如果不使用字节使能，请保持�?0
+	.base_ram_ce_n(base_ram_ce_n),       //BaseRAM片�?�，低有�?
+	.base_ram_oe_n(base_ram_oe_n),       //BaseRAM读使能，低有�?
+	.base_ram_we_n(base_ram_we_n),       //BaseRAM写使能，低有�?
+
+	//ExtRAM信号
+	.ext_ram_data(ext_ram_data),  //ExtRAM数据
+	.ext_ram_addr(ext_ram_addr), //ExtRAM地址
+	.ext_ram_be_n(ext_ram_be_n),  //ExtRAM字节使能，低有效。如果不使用字节使能，请保持�?0
+	.ext_ram_ce_n(ext_ram_ce_n),       //ExtRAM片�?�，低有�?
+	.ext_ram_oe_n(ext_ram_oe_n),       //ExtRAM读使能，低有�?
+	.ext_ram_we_n(ext_ram_we_n)       //ExtRAM写使能，低有�?
+);
+
 
 assign leds = 
             (sw == 0) ? debug_ins[15:0] :
@@ -193,69 +288,14 @@ assign leds =
             (sw == 24) ? serial_addr[15:0] : 
             (sw == 25) ? {serial_wdata[7:0], serial_rdata[7:0]} :
             (sw == 32) ? {mem_ready, 11'b0, mem_mode} :
+            (sw == 40) ? {debug_if_mode, debug_mem_mode, debug_if_error, debug_mem_error, debug_if_wait,debug_mem_wait,debug_if_ready,debug_mem_ready} :
+            (sw == 44) ? debug_if_addr[15:0] :
+            (sw == 45) ? debug_if_addr[31:16] :
+            (sw == 46) ? debug_mem_addr[15:0] :
+            (sw == 47) ? debug_mem_addr[31:16] :
             (sw == 48) ? {serial_ready, 11'b0, serial_mode} : 
+            (sw == 56) ? {12'b0, txd, ~txd, rxd, ~rxd} :
+            (sw == 57) ? serial_debug_out :
             debug_ins[15:0];
-            
-
-always@ (posedge clock or posedge reset) begin
-    if (reset) begin
-        number <= 0;
-    end else begin
-        number <= debug_pc[7:0];
-    end
-end
-
-serial serial0(
-	.clk(clk_10M),
-	.addr(serial_addr),
-	.ready(serial_ready),
-	.rdata(serial_rdata),
-	.wdata(serial_wdata),
-	.mode(serial_mode),
-
-	.rxd(rxd),
-	.txd(txd)
-);
-
-//图像输出演示，分辨率800x600@75Hz，像素时钟为50MHz
-//wire [11:0] hdata;
-//assign video_red = hdata < 266 ? 3'b111 : 0; //红色竖条
-//assign video_green = hdata < 532 && hdata >= 266 ? 3'b111 : 0; //绿色竖条
-//assign video_blue = hdata >= 532 ? 2'b11 : 0; //蓝色竖条
-//assign video_clk = clk_50M;
-//vga #(12, 800, 856, 976, 1040, 600, 637, 643, 666, 1, 1) vga800x600at75 (
-    //.clk(clk_50M), 
-    //.hdata(hdata), //横坐�?
-    //.vdata(),      //纵坐�?
-    //.hsync(video_hsync),
-    //.vsync(video_vsync),
-    //.data_enable(video_de)
-//);
-
-ram ram0(
-	//与Chisel之间的接�?
-	.clk(clk_10M),
-	.addr(mem_addr),			// 访存地址，低22位有�?
-	.ready(mem_ready),
-	.rdata(mem_rdata),		// 读出的数�?
-	.wdata(mem_wdata),		// 写入的数�?
-	.mode(mem_mode),			// 访存模式
-
-	//BaseRAM信号
-	.base_ram_data(base_ram_data),  //BaseRAM数据，低8位与CPLD串口控制器共�?
-	.base_ram_addr(base_ram_addr), //BaseRAM地址
-	.base_ram_be_n(base_ram_be_n),  //BaseRAM字节使能，低有效。如果不使用字节使能，请保持�?0
-	.base_ram_ce_n(base_ram_ce_n),       //BaseRAM片�?�，低有�?
-	.base_ram_oe_n(base_ram_oe_n),       //BaseRAM读使能，低有�?
-	.base_ram_we_n(base_ram_we_n),       //BaseRAM写使能，低有�?
-
-	//ExtRAM信号
-	.ext_ram_data(ext_ram_data),  //ExtRAM数据
-	.ext_ram_addr(ext_ram_addr), //ExtRAM地址
-	.ext_ram_be_n(ext_ram_be_n),  //ExtRAM字节使能，低有效。如果不使用字节使能，请保持�?0
-	.ext_ram_ce_n(ext_ram_ce_n),       //ExtRAM片�?�，低有�?
-	.ext_ram_oe_n(ext_ram_oe_n),       //ExtRAM读使能，低有�?
-	.ext_ram_we_n(ext_ram_we_n)       //ExtRAM写使能，低有�?
-);
 
 endmodule
